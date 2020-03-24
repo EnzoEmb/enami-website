@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>🏄‍♂️ enima.js - a simple animation-on-scroll library</title>
+  <link rel="icon" href="favicon.svg" type="image/svg+xml" />
+  <!-- Styles -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
+  <link rel="stylesheet" href="assets/css/style.css">
+</head>
+
+<body>
+  <main id="main-wrapper">
+    <header id="main-header">
+      <h1 data-enima="fade-up">enima.js</h1>
+      <h2 data-enima="fade-up" data-enima-delay=".2s">a simple animation-<br>on-scroll library</h2>
+      <div class="badge">only 3kb minified!</div>
+      <div class="buttons">
+        <a href="#" class="btn-green">Download</a>
+        <a href="#" class="btn-green--border">Check on Github</a>
+      </div>
+    </header>
+  </main>
+
+  <!-- Scripts -->
+  <script src="assets/js/enima.min.js"></script>
+  <script src="assets/js/app.js"></script>
+  <script>
+    enima.init();
+  </script>
+</body>
+
+</html>

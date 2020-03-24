@@ -1,0 +1,63 @@
+@import "src/vars";
+@import "src/fonts";
+@import "src/elements";
+@import "src/enimas";
+*,
+*:after,
+*:before {
+  box-sizing: border-box;
+}
+body {
+  font-family: $f-codec;
+  background-color: $c-white;
+  padding-bottom: 100vh;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: normal;
+  color: $c-black;
+  letter-spacing: -0.04em;
+}
+a{
+    text-decoration: none;
+}
+#main-wrapper {
+  margin: auto;
+  max-width: 1000px;
+}
+#main-header {
+  height: 100vh;
+  min-height: 650px;
+  max-height: 1000px;
+  border: 1px solid red;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  text-align: center;
+  h1 {
+    margin: 0;
+    font-size: 70px;
+  }
+  h2 {
+    font-size: 50px;
+    color: $c-orange;
+    margin: 0 0 15px 0;
+  }
+  .badge {
+    background-color: $c-red;
+    display: inline-block;
+    color: white;
+    font-size: 13px;
+    line-height: 1;
+    padding: 7px 10px;
+    transform: rotate(-5deg);
+  }
+  .buttons{
+      margin-top: 35px;
+  }
+}

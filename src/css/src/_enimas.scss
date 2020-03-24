@@ -1,0 +1,32 @@
+[data-enima] {
+  visibility: hidden;
+}
+[data-enima-in] {
+  visibility: visible;
+}
+[data-enima="fade-up"] {
+  &[data-enima-in] {
+    animation: 4s fadeUp forwards cubic-bezier(0.19, 1, 0.22, 1);
+  }
+}
+
+@keyframes fadeUp {
+  from {
+    transform: translate3d(0, 50px, 0) rotate(0.02deg);
+    opacity: 0;
+  }
+  to {
+    transform: translate3d(0, 0, 0) rotate(0deg);
+    opacity: 1;
+  }
+}
+
+// @keyframes firefoxFix {
+//   from {
+//     transform: rotate(0.02deg);
+//   }
+//   to {
+//     transform: rotate(0.02deg);
+//     transform: rotate(0deg);
+//   }
+// }

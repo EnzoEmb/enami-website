@@ -1,0 +1,23 @@
+.btn-green {
+  font-size: 15px;
+  color: $c-black;
+  height: 55px;
+  padding: 0 40px;
+  border-radius: 5px;
+  background-color: $c-green;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.btn-green--border {
+  font-size: 15px;
+  color: $c-black;
+  height: 55px;
+  padding: 0 40px;
+  border-radius: 5px;
+  box-shadow: inset 0 0 0 2px $c-green;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+}
