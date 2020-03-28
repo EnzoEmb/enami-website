@@ -1,2 +1,2 @@
-# enima-website
+# enami-website
 📚 Showcase and docs for enima
