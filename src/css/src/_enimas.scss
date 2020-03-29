@@ -1,11 +1,11 @@
-[data-enima] {
+[data-enami] {
   visibility: hidden;
 }
-[data-enima-in] {
+[data-enami-in] {
   visibility: visible;
 }
-[data-enima="fade-up"] {
-  &[data-enima-in] {
+[data-enami="fade-up"] {
+  &[data-enami-in] {
     animation: 4s fadeUp forwards cubic-bezier(0.19, 1, 0.22, 1);
   }
 }
@@ -30,3 +30,25 @@
 //     transform: rotate(0deg);
 //   }
 // }
+
+
+[data-enami="hexa"] {
+  &[data-enami-in] {
+    // animation: 2s hexa forwards cubic-bezier(0.19, 1, 0.22, 1);
+    // animation: 2s hexa forwards cubic-bezier(0.66, 0, 0.34, 1);
+    animation: 1.5s hexa forwards cubic-bezier(0.680, -0.550, 0.265, 2.4);
+    
+ 
+  }
+}
+
+@keyframes hexa {
+  from {
+    transform: scale(.5) rotate(0.005deg);
+    opacity: 0;
+  }
+  to {
+    transform: scale(1) rotate(0deg);
+    opacity: 1;
+  }
+}
