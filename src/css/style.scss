@@ -52,6 +52,12 @@ a {
     font-size: 50px;
     color: $c-orange;
     margin: 0 0 15px 0;
+    // text-shadow:
+    // 0 0 3px white,
+    // -3px -3px 0 white,  
+    // 3px -3px 0 white,
+    // -3px 3px 0 white,
+    // 3px 3px 0 white;
   }
   .badge {
     background-color: $c-red;
@@ -109,7 +115,8 @@ a {
     transform-origin: center;
     // fill: red;
     // fill: #f8f0e4;
-    fill: #faeedf;
+    // fill: #faeedf;
+    fill: url(#my-cool-gradient) #447799;
     opacity: 0;
   }
 }
