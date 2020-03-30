@@ -10,25 +10,39 @@
   }
 }
 
-.char {
-  visibility: hidden;
-  &[data-enami-in] {
-  visibility: visible;
-  animation: .5s fup forwards cubic-bezier(0.19, 1, 0.22, 1);
-  }
-  @keyframes fup {
-    from {
-      transform: translate3d(0, 10px, 0) rotate(0.02deg);
-      opacity: 0;
-    }
-    to {
-      transform: translate3d(0, 0, 0) rotate(0deg);
-      opacity: 1;
+h2 {
+  .char {
+    visibility: hidden;
+    &[data-enami-in] {
+      visibility: visible;
+      // animation: .5s fup forwards cubic-bezier(0.19, 1, 0.22, 1);
+      // animation: .5s hexa forwards  cubic-bezier(0.680, -0.550, 0.265, 2.4);
+      animation: 0.5s fup forwards cubic-bezier(0.68, -0.55, 0.265, 2.4);
+      @keyframes fup {
+        from {
+          transform: translate3d(0, 10px, 0) rotate(0.02deg);
+          opacity: 0;
+        }
+        to {
+          transform: translate3d(0, 0, 0) rotate(0deg);
+          opacity: 1;
+        }
+      }
     }
   }
 }
 
-
+h1 {
+  .char {
+    visibility: hidden;
+    &[data-enami-in] {
+      visibility: visible;
+      // animation: .5s fup forwards cubic-bezier(0.19, 1, 0.22, 1);
+      // animation: .5s hexa forwards  cubic-bezier(0.680, -0.550, 0.265, 2.4);
+      animation: 0.5s hexa forwards cubic-bezier(0.68, -0.55, 0.265, 1);
+    }
+  }
+}
 @keyframes fadeUp {
   from {
     transform: translate3d(0, 50px, 0) rotate(0.02deg);
@@ -50,20 +64,17 @@
 //   }
 // }
 
-
 [data-enami="hexa"] {
   &[data-enami-in] {
     // animation: 2s hexa forwards cubic-bezier(0.19, 1, 0.22, 1);
     // animation: 2s hexa forwards cubic-bezier(0.66, 0, 0.34, 1);
-    animation: 1.5s hexa forwards cubic-bezier(0.680, -0.550, 0.265, 2.4);
-    
- 
+    animation: 1.5s hexa forwards cubic-bezier(0.68, -0.55, 0.265, 2.4);
   }
 }
 
 @keyframes hexa {
   from {
-    transform: scale(.5) rotate(0.005deg);
+    transform: scale(0.5) rotate(0.005deg);
     opacity: 0;
   }
   to {

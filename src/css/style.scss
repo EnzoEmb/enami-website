@@ -103,8 +103,8 @@ a {
     // stroke: #f8f0e4;
     stroke: #c39135;
     stroke-miterlimit: 10;
+    // stroke-width: .1;
     stroke-width: .2;
-    // stroke-width: .2;
   }
   .hexagon-fill {
     // stroke: #b2dfd9;
@@ -115,6 +115,7 @@ a {
     // fill: red;
     // fill: #f8f0e4;
     // fill: #faeedf;
+    // fill: #fff2dd;
     fill: url(#my-cool-gradient) #447799;
     opacity: 0;
   }
