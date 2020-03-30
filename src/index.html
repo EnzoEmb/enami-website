@@ -9,6 +9,8 @@
   <!-- Styles -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
   <link rel="stylesheet" href="assets/css/style.css">
+  <link rel="stylesheet" href="https://unpkg.com/splitting/dist/splitting.css" />
+<link rel="stylesheet" href="https://unpkg.com/splitting/dist/splitting-cells.css" />
 </head>
 
 <body>
@@ -16,8 +18,8 @@
     <div id="top">
 
       <header id="main-header">
-        <h1 data-enami="fade-up">enami.js</h1>
-        <h2 data-enami="fade-up" data-enami-delay=".2s">a simple animation-<br>on-scroll library</h2>
+        <h1 data-splitting data-enami-once="true"  data-enami-children=".char" data-enami-stagger=".05s" >enami.js</h1>
+        <h2 data-splitting data-enami-children=".char" data-enami-stagger=".05s" data-enami-reset>a simple animation-<br>on-scroll library</h2>
         <div class="badge">only 3kb minified!</div>
         <div class="buttons">
           <a href="#" class="btn-green">Download</a>
@@ -683,7 +685,8 @@
     </div>
   </main>
 
-  <!-- Scripts -->
+<script src="https://unpkg.com/splitting/dist/splitting.min.js"></script>
+<!-- Scripts -->
   <script src="../../enima/dist/enami.js"></script>
   <script src="assets/js/app.js"></script>
   <script>
@@ -691,6 +694,14 @@
     var a = new enami({
         once: false
     });
+    Splitting({
+  /* target: String selector, Element, Array of Elements, or NodeList */
+  target: "[data-splitting]",
+  /* by: String of the plugin name */
+  by: "chars",
+  /* key: Optional String to prefix the CSS variables */
+  key: null
+});
   </script>
 </body>
 

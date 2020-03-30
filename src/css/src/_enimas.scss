@@ -10,6 +10,25 @@
   }
 }
 
+.char {
+  visibility: hidden;
+  &[data-enami-in] {
+  visibility: visible;
+  animation: .5s fup forwards cubic-bezier(0.19, 1, 0.22, 1);
+  }
+  @keyframes fup {
+    from {
+      transform: translate3d(0, 10px, 0) rotate(0.02deg);
+      opacity: 0;
+    }
+    to {
+      transform: translate3d(0, 0, 0) rotate(0deg);
+      opacity: 1;
+    }
+  }
+}
+
+
 @keyframes fadeUp {
   from {
     transform: translate3d(0, 50px, 0) rotate(0.02deg);
