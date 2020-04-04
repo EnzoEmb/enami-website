@@ -38,6 +38,8 @@ gulp.task('html', function (done) {
 gulp.task('copy', function (done) {
     gulp.src(['src/fonts/**/*'])
         .pipe(gulp.dest('dist/assets/fonts'));
+    gulp.src(['src/img/**/*'])
+        .pipe(gulp.dest('dist/assets/img'));
     gulp.src(['src/favicon.svg'])
         .pipe(gulp.dest('dist/'));
     done();
