@@ -182,6 +182,44 @@
       </figure>
     </div>
 
+    <section id="about">
+      <div class="container">
+        <h4 class="minititle">ABOUT</h4>
+        <p data-splitting-lines data-enami-reset data-enami-children=".line" data-enami-stagger=".1s">enami.js provides an easy way to animate elements on visibility, it uses the Intersection Observer API to add attributes and inline styles to elements visible on the screen. It also includes a css library with multiple animations you can use.</p>
+      </div>
+    </section>
+
+    <article class="demo">
+      <div class="container">
+        <aside>
+          <h2 class="demo-title">Basic Setup</h2>
+          <p>Add the <span class="badge">data-enami="animation-name"</span> attribute on the elements you want to animate and initiate a new enami</p>
+        </aside>
+        <div class="demo-content">
+          <div class="demo-dot" data-enami="fade-up">1</div>
+          <div class="demo-dot" data-enami="fade-up">2</div>
+          <div class="demo-dot" data-enami="fade-up">3</div>
+          <div class="demo-dot" data-enami="fade-up">4</div>
+          <div class="demo-dot" data-enami="fade-up">5</div>
+          <div class="demo-dot" data-enami="fade-up">6</div>
+          <div class="demo-dot" data-enami="fade-up">7</div>
+          <div class="demo-dot" data-enami="fade-up">8</div>
+          <div class="demo-dot" data-enami="fade-up">9</div>
+          <div class="demo-dot" data-enami="fade-up">10</div>
+          <div class="demo-dot" data-enami="fade-up">1</div>
+          <div class="demo-dot" data-enami="fade-up">2</div>
+          <div class="demo-dot" data-enami="fade-up">3</div>
+          <div class="demo-dot" data-enami="fade-up">4</div>
+          <div class="demo-dot" data-enami="fade-up">5</div>
+          <div class="demo-dot" data-enami="fade-up">6</div>
+          <div class="demo-dot" data-enami="fade-up">7</div>
+          <div class="demo-dot" data-enami="fade-up">8</div>
+          <div class="demo-dot" data-enami="fade-up">9</div>
+          <div class="demo-dot" data-enami="fade-up">10</div>
+        </div>
+      </div>
+    </article>
+
 
     
   </main>
@@ -202,6 +240,20 @@
       /* key: Optional String to prefix the CSS variables */
       key: null
     });
+    var lines = Splitting({
+      target: "[data-splitting-lines]",
+      by: "lines",
+    });
+    
+
+    lines.forEach((splitResult) => {
+        const wrappedLines = splitResult.lines.map((wordsArr) => `
+        <span class="line">
+          ${wordsArr.map((word) => `${word.outerHTML}<span class="whitespace"> 
+         </span>`).join('')}
+        </span>`).join('');
+        splitResult.el.innerHTML = wrappedLines;
+      });
   </script>
 </body>
 
