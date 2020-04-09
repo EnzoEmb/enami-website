@@ -9,6 +9,23 @@
     animation: 4s fadeUp forwards cubic-bezier(0.19, 1, 0.22, 1);
   }
 }
+[data-enami="scale-in"] {
+  &[data-enami-in] {
+    animation: 3s scaleIn forwards cubic-bezier(0.19, 1, 0.22, 1);
+  }
+}
+
+@keyframes scaleIn {
+  from {
+    transform: scale(0) rotate(0.02deg);
+    opacity: 0;
+  }
+  to {
+    transform: scale(1) rotate(0deg);
+    opacity: 1;
+  }
+}
+
 
 h2 {
   .char {

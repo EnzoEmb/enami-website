@@ -186,24 +186,23 @@ a {
 
 .demo {
   margin: 60px 0;
-  .container{
-
+  .container {
     display: flex;
     align-items: center;
     justify-content: space-between;
   }
   aside {
     width: 30%;
-    .demo-title{
+    .demo-title {
       color: $c-cyan;
       font-size: 30px;
     }
-    p{
+    p {
       line-height: 1.6em;
       color: white;
       font-size: 15px;
     }
-    .badge{
+    .badge {
       padding: 5px 10px;
       background-color: #001e51;
       border-radius: 3px;
@@ -223,24 +222,27 @@ a {
       0px 1px 30px 0px rgba(0, 0, 0, 0.2), 0px 23px 60px 0px rgba(0, 0, 0, 0.2),
       inset 0px 0px 0px 1px rgba(0, 0, 0, 0.15);
 
-      padding: 20px;
-      display: flex;
-      justify-content: space-between;
-      flex-wrap: wrap;
-      overflow: auto;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    overflow: auto;
 
-      .demo-dot{
-        display: inline-flex;
-        align-items: center;
-        justify-content: center;
-        color: white;
-        background-color: $c-pink;
-        border-radius: 50%;
-        width: 100px;
-        height: 100px;
-        font-size: 40px;
-        margin-bottom: 50px;
-      }
+    &.sm .demo-dot {
+      font-size: 20px;
+    }
 
+    .demo-dot {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      color: white;
+      background-color: $c-pink;
+      border-radius: 50%;
+      width: 100px;
+      height: 100px;
+      font-size: 40px;
+      margin-bottom: 50px;
+    }
   }
 }
