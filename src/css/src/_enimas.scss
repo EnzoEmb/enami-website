@@ -11,10 +11,20 @@
 }
 [data-enami="scale-in"] {
   &[data-enami-in] {
-    animation: 3s scaleIn forwards cubic-bezier(0.19, 1, 0.22, 1);
+    animation: 3s scaleIn forwards;
   }
 }
+// [data-enami-in]{
+//   background: green !important;
+// }
+// [data-enami-out]{
+//   background: red !important ;
+// }
+/*
+Hay un bug extraño en firefox 
+Cambiando el scale inicial de 0 a 0.2 soluciona en parte el bug
 
+*/
 @keyframes scaleIn {
   from {
     transform: scale(0) rotate(0.02deg);
