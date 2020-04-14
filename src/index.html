@@ -511,7 +511,7 @@
           <p>Add the <span class="badge">data-enami-duration=".2s"</span> attribute on a element to add a inline
             transition-animation duration property</p>
         </aside>
-        <div class="demo-content">
+        <div class="demo-content" id="duration">
           <div class="demo-dot--container">
             <div class="demo-dot" data-enami="scale-in" data-enami-duration=".1s">.1s</div>
           </div>
@@ -660,7 +660,9 @@
 
     var a = new enami({
       once: false,
-      offset: '50%'
+      selector: '#duration',
+      rootMargin: '50% 0%',
+      threshold: .5 
     });
     Splitting({
       /* target: String selector, Element, Array of Elements, or NodeList */

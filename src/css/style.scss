@@ -6,7 +6,7 @@
 *:after,
 *:before {
   box-sizing: border-box;
-  // backface-visibility: hidden;
+  backface-visibility: hidden;
   transform-box: view-box;
 }
 body {
@@ -240,7 +240,7 @@ a {
       justify-content: center;
       color: white;
       background-color: $c-pink;
-      border-radius: 50%;
+      border-radius: 20px;
       width: 100px;
       height: 100px;
       font-size: 40px;

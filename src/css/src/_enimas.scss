@@ -1,6 +1,6 @@
 [data-enami] {
-  visibility: hidden;
-  will-change: transform;
+  // visibility: hidden;
+  // will-change: transform;
 }
 [data-enami-in] {
   visibility: visible;
@@ -11,8 +11,19 @@
   }
 }
 [data-enami="scale-in"] {
-  &[data-enami-in] {
-    animation: 3s scaleIn forwards;
+    animation-play-state: pause;
+    transform: scale(0.4) rotate(0.02deg);
+    animation-fill-mode: both;
+    background: red;
+    &[data-enami-in] {
+    animation-name: scaleIn;
+    animation-duration: 3s;
+    animation-play-state: running;
+  }
+  &[data-enami-out]{
+    animation-name: scaleIn;
+    animation-direction: reverse;
+    animation-play-state: running;
   }
 }
 // [data-enami-in]{
@@ -28,12 +39,13 @@ Cambiando el scale inicial de 0 a 0.2 soluciona en parte el bug
 */
 @keyframes scaleIn {
   from {
-    transform: scale(0) rotate(0.02deg);
-    opacity: 0;
+    transform: scale(0.4) rotate(0.02deg);
+    // opacity: 0;
+    background: red;
   }
   to {
     transform: scale(1) rotate(0deg);
-    opacity: 1;
+    background: green;
   }
 }
 
