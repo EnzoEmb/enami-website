@@ -15,9 +15,9 @@
     transform: scale(0.4) rotate(0.02deg);
     animation-fill-mode: both;
     background: red;
+    animation-duration: 1s;
     &[data-enami-in] {
     animation-name: scaleIn;
-    animation-duration: 3s;
     animation-play-state: running;
   }
   &[data-enami-out]{
