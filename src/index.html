@@ -28,7 +28,7 @@
         </div>
       </header>
 
-      <figure data-enami-children="span > span" data-enami-stagger=".05s" data-enami-delay="1.4s">
+      <figure data-enami-children="span > span" data-enami-stagger=".05s" data-enami-delay="0">
         <span><span></span> </span>
         <span><span></span> </span>
         <span><span></span> </span>
@@ -185,10 +185,31 @@
     <section id="about">
       <div class="container">
         <h4 class="minititle">ABOUT</h4>
-        <p data-splitting-lines data-enami-reset data-enami-children=".line" data-enami-stagger=".1s">enami.js provides
+        <p data-splitting-lines data-enami-reset data-enami-children=".word" data-enami-stagger=".05s">enami.js provides
           an easy way to animate elements on visibility, it uses the Intersection Observer API to add attributes and
           inline styles to elements visible on the screen. It also includes a css library with multiple animations you
           can use.</p>
+      </div>
+    </section>
+
+    <section id="animations">
+      <div class="container">
+        <h4 class="minititle">ENAMI PRE-BUILT ANIMATIONS</h4>
+
+      </div>
+      <div class="container">
+        <div class="animation-demo">
+        <div class="animations-zone">
+          5as56d1a56sd1
+        </div>
+        <div class="animations-list">
+          <button>Fade Up <div class="badge">fade-up</div></button>
+          <button>Fade Left <div class="badge">fade-left</div></button>
+          <button>Fade Right <div class="badge">fade-right</div></button>
+          <button>Fade Down <div class="badge">fade-down</div></button>
+          <button>Fade Up <div class="badge">fade-up</div></button>
+        </div>
+        </div>
       </div>
     </section>
 
@@ -662,7 +683,7 @@
       once: false,
       // selector: '#duration',
       // rootMargin: '50% 0%',
-      threshold: .5 
+      threshold: .5
     });
     Splitting({
       /* target: String selector, Element, Array of Elements, or NodeList */
