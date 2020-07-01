@@ -1,21 +1,21 @@
 {
-  "name": "enima-website",
+  "name": "enami-website",
   "version": "1.0.0",
-  "description": "Showcase and docs for enima",
+  "description": "Showcase and docs for enami",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/EnzoEmb/enima-website.git"
+    "url": "git+https://github.com/EnzoEmb/enami-website.git"
   },
   "author": "Enzo Vergara",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/EnzoEmb/enima-website/issues"
+    "url": "https://github.com/EnzoEmb/enami-website/issues"
   },
-  "homepage": "https://github.com/EnzoEmb/enima-website#readme",
+  "homepage": "https://github.com/EnzoEmb/enami-website#readme",
   "devDependencies": {
     "gulp": "^4.0.2",
     "gulp-autoprefixer": "^7.0.1",

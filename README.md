@@ -1,2 +1,2 @@
 # enami-website
-📚 Showcase and docs for enima
+📚 Showcase and docs for enami
