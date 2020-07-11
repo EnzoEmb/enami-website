@@ -10,6 +10,8 @@
     animation: 4s fadeUp forwards cubic-bezier(0.19, 1, 0.22, 1);
   }
 }
+
+
 [data-enami="scale-in"] {
     animation-play-state: pause;
     transform: scale(0.4) rotate(0.02deg);

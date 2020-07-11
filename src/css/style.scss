@@ -2,6 +2,7 @@
 @import "src/fonts";
 @import "src/elements";
 @import "src/enamis";
+@import "src/demo-enamis";
 *,
 *:after,
 *:before {
@@ -315,6 +316,20 @@ a {
   .animations-zone {
     padding: 20px;
     flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    span{
+      width: 150px;
+      height: 150px;
+      border-radius: 50%;
+      background: #002665;
+      font-size: 60px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-family: monospace;
+    }
   }
   .animations-list {
     padding: 20px;
