@@ -14,6 +14,7 @@ body {
   font-family: $f-codec;
   background-color: #002665;
   padding-bottom: 100vh;
+  color: white;
 }
 h1,
 h2,
@@ -94,7 +95,7 @@ a {
     flex-wrap: wrap;
     justify-content: space-between;
     span {
-      background-image: url("../img/pattern.svg");
+      background-image: url("../public/img/pattern.svg");
       display: inline-block;
       width: 80px;
       height: 80px;
@@ -107,7 +108,7 @@ a {
           transform: scale(1);
         }
         content: "";
-        background-image: url("../img/pattern-fill.svg");
+        background-image: url("../public/img/pattern-fill.svg");
         display: inline-block;
         width: 100%;
         height: 100%;

@@ -1,27 +1,17 @@
 {
   "name": "enami-website",
-  "version": "1.0.0",
-  "description": "Showcase and docs for enami",
-  "main": "index.js",
+  "version": "0.1.0",
+  "private": true,
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start"
   },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/EnzoEmb/enami-website.git"
-  },
-  "author": "Enzo Vergara",
-  "license": "MIT",
-  "bugs": {
-    "url": "https://github.com/EnzoEmb/enami-website/issues"
-  },
-  "homepage": "https://github.com/EnzoEmb/enami-website#readme",
-  "devDependencies": {
-    "gulp": "^4.0.2",
-    "gulp-autoprefixer": "^7.0.1",
-    "gulp-htmlmin": "^5.0.1",
-    "gulp-plumber": "^1.2.1",
-    "gulp-sass": "^4.0.2",
-    "gulp-terser": "^1.2.0"
+  "dependencies": {
+    "enami": "^0.1.0",
+    "next": "9.5.5",
+    "react": "16.14.0",
+    "react-dom": "16.14.0",
+    "sass": "^1.27.0"
   }
 }
