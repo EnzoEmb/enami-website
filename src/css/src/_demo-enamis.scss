@@ -134,3 +134,54 @@
         }
     }
 }
+
+
+
+
+[data-enami="pop-up"] {
+    animation: .5s popUp forwards cubic-bezier(0.68, -0.55, 0.265, 2.4);
+    @keyframes popUp {
+        from {
+            transform: scale(0);
+        }
+        to {
+            transform: scale(1);
+        }
+    }
+}
+
+[data-enami="pop-left"] {
+    animation: .5s popLeft forwards cubic-bezier(0.68, -0.55, 0.265, 2.4);
+    @keyframes popLeft {
+        from {
+            transform: scale(0);
+        }
+        to {
+            transform: scale(1);
+        }
+    }
+}
+
+[data-enami="pop-right"] {
+    animation: .5s popRight forwards cubic-bezier(0.68, -0.55, 0.265, 2.4);
+    @keyframes popRight {
+        from {
+            transform: scale(0);
+        }
+        to {
+            transform: scale(1);
+        }
+    }
+}
+
+[data-enami="pop-down"] {
+    animation: .5s popDown forwards cubic-bezier(0.68, -0.55, 0.265, 2.4);
+    @keyframes popDown {
+        from {
+            transform: scale(0);
+        }
+        to {
+            transform: scale(1);
+        }
+    }
+}
