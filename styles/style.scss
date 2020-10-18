@@ -35,6 +35,7 @@ a {
   padding: 0 50px;
 }
 #main-header {
+  pointer-events: none;
   height: 100vh;
   min-height: 650px;
   max-height: 1000px;
@@ -96,9 +97,11 @@ a {
     justify-content: space-between;
     span {
       background-image: url("../public/img/pattern.svg");
+      width: clamp(50px, 5.5555vw, 80px);
+      // box-shadow: 0 0 0 1px rgba(255, 0, 0, .25);
       display: inline-block;
-      width: 80px;
-      height: 80px;
+      // width: 80px;
+      height: clamp(50px, 5.5555vw, 80px);
       background-size: contain;
       background-position: center;
       background-repeat: no-repeat;
@@ -320,7 +323,7 @@ a {
     display: flex;
     align-items: center;
     justify-content: center;
-    span{
+    span {
       width: 150px;
       height: 150px;
       border-radius: 50%;
