@@ -46,10 +46,47 @@ a {
     margin: 0;
     font-size: 70px;
     color: $c-cyan;
+    span {
+      display: inline-block;
+
+      visibility: hidden;
+      &[data-enami-in] {
+        visibility: visible;
+        // animation: .5s fup forwards cubic-bezier(0.19, 1, 0.22, 1);
+        // animation: .5s hexa forwards  cubic-bezier(0.680, -0.550, 0.265, 2.4);
+        animation: 0.5s hexa forwards cubic-bezier(0.68, -0.55, 0.265, 1);
+      }
+    }
   }
   h2 {
     font-size: 50px;
     margin: 0 0 15px 0;
+    span {
+      display: inline-block;
+
+      visibility: hidden;
+      &.letter-{
+        width: 10px;
+        // height: 15px !important;
+        // background: red !important;
+      }
+      &[data-enami-in] {
+        visibility: visible;
+        // animation: .5s fup forwards cubic-bezier(0.19, 1, 0.22, 1);
+        // animation: .5s hexa forwards  cubic-bezier(0.680, -0.550, 0.265, 2.4);
+        animation: 0.7s fup forwards cubic-bezier(0.68, -0.55, 0.265, 2.4);
+        @keyframes fup {
+          from {
+            transform: translate3d(0, 10px, 0) rotate(0.02deg);
+            opacity: 0;
+          }
+          to {
+            transform: translate3d(0, 0, 0) rotate(0deg);
+            opacity: 1;
+          }
+        }
+      }
+    }
   }
   .badge {
     background-color: $c-pink;

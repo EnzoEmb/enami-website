@@ -8,6 +8,7 @@
     "start": "next start"
   },
   "dependencies": {
+    "charming": "^3.0.2",
     "enami": "^0.1.0",
     "next": "9.5.5",
     "normalize.css": "^8.0.1",
