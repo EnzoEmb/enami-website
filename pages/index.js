@@ -1,16 +1,45 @@
 import HomeHead from '../components/HomeHead';
 import Animatron from '../components/Animatron';
-import 'enami';
+// import * from 'enami' as enami;
+import {useEffect} from 'react';
+// import * as enami from 'enami';
+// import {enami} from '../node_modules/enami/src/index';
+import * as enami from '../../enami/src/index';
+import dynamic from 'next/dynamic';
+// const DynamicComponent = dynamic(() => import('enami'))
+// import * as enami from 'enami';
+// import * as hola from 'enami';
+// import { e } from 'enami'
 
-
+// // import your component with dynamic and disable SSR
+// const MyAwesomeComponent = dynamic(
+//   () => import(''),
+//   {ssr: false}
+// );
 
 export default function Home() {
+
+  
+  useEffect(() => {
+  //   // document.title = `You clicked ${count} times`;
+  //   var test =
+   const asd = new enami({
+      once: false,
+      // selector: '#duration',
+      // rootMargin: '50% 0%',
+      threshold: .5
+    });
+  // console.log(enami);
+  // alert('asdasd');
+  });
+
+  
   return (
     <main id="main-wrapper">
 
       <HomeHead />
 
-      <section id="about">
+      <section id="about" data-enami="fade-up">
         <div className="container">
           <h4 className="minititle">ABOUT</h4>
           <p data-splitting-lines data-enami-reset data-enami-children=".word" data-enami-stagger=".05s">enami.js provides

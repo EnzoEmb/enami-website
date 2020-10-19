@@ -2,7 +2,6 @@
 @import "src/fonts";
 @import "src/elements";
 @import "src/enamis";
-@import "src/demo-enamis";
 *,
 *:after,
 *:before {
@@ -35,7 +34,6 @@ a {
   padding: 0 50px;
 }
 #main-header {
-  pointer-events: none;
   height: 100vh;
   min-height: 650px;
   max-height: 1000px;
