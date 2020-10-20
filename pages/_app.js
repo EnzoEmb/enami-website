@@ -1,6 +1,6 @@
 import 'normalize.css'
 import '../styles/style.scss'
-import '../../enami/dist/enami.css'
+import '../node_modules/enami/dist/enami'
 
 function MyApp({ Component, pageProps }) {
   return <Component {...pageProps} />

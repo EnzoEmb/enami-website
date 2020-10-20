@@ -5,7 +5,7 @@ import {useEffect} from 'react';
 // import * as enami from 'enami';
 // import {enami} from '../node_modules/enami/src/index';
 
-import * as enami from '../../enami/src/index';
+import * as enami from 'enami';
 import dynamic from 'next/dynamic';
 // const DynamicComponent = dynamic(() => import('enami'))
 // import * as enami from 'enami';
