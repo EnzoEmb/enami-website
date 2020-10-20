@@ -1,21 +1,28 @@
 import { useEffect } from 'react';
-import dynamic from 'next/dynamic'
+// import dynamic from 'next/dynamic'
 import charming from 'charming';
 
+
+// import { useEffect } from 'react';
+
+import * as enami from 'enami';
 
 export default function HomeHead() {
   useEffect(() => {
 
     const element = document.querySelectorAll('[data-splitting]')
     element.forEach(e => {
-      charming(e,{
-        
-
+      charming(e, {
         setClassName: function (index, letter) {
           return `index-${index} letter-${letter}`
         }
       })
 
+    });
+
+
+    new enami({
+      threshold: .5
     });
 
   })
@@ -38,156 +45,9 @@ export default function HomeHead() {
 
 
       <figure data-enami-children="span > span" data-enami-stagger=".05s" data-enami-delay="0">
-        <span><span></span> </span>
-        <span><span></span> </span>
-        <span><span></span> </span>
-        <span><span></span> </span>
-        <span><span></span> </span>
-        <span><span></span> </span>
-        <span><span></span> </span>
-        <span><span></span> </span>
-        <span><span></span> </span>
-        <span><span></span> </span>
-        <span><span></span> </span>
-        <span><span></span> </span>
-        <span><span></span> </span>
-        <span><span></span> </span>
-        <span><span></span> </span>
-        <span><span></span> </span>
-        <span><span></span> </span>
-        <span><span></span> </span>
-        <span><span></span> </span>
-        <span><span></span> </span>
-        <span><span></span> </span>
-        <span><span></span> </span>
-        <span><span></span> </span>
-        <span><span></span> </span>
-        <span><span></span> </span>
-        <span><span></span> </span>
-        <span><span></span> </span>
-        <span><span></span> </span>
-        <span><span></span> </span>
-        <span><span></span> </span>
-        <span><span></span> </span>
-        <span><span></span> </span>
-        <span><span></span> </span>
-        <span><span></span> </span>
-        <span><span></span> </span>
-        <span><span></span> </span>
-        <span><span></span> </span>
-        <span><span></span> </span>
-        <span><span></span> </span>
-        <span><span></span> </span>
-        <span><span></span> </span>
-        <span><span></span> </span>
-        <span><span></span> </span>
-        <span><span></span> </span>
-        <span><span></span> </span>
-        <span><span></span> </span>
-        <span><span></span> </span>
-        <span><span></span> </span>
-        <span><span></span> </span>
-        <span><span></span> </span>
-        <span><span></span> </span>
-        <span><span></span> </span>
-        <span><span></span> </span>
-        <span><span></span> </span>
-        <span><span></span> </span>
-        <span><span></span> </span>
-        <span><span></span> </span>
-        <span><span></span> </span>
-        <span><span></span> </span>
-        <span><span></span> </span>
-        <span><span></span> </span>
-        <span><span></span> </span>
-        <span><span></span> </span>
-        <span><span></span> </span>
-        <span><span></span> </span>
-        <span><span></span> </span>
-        <span><span></span> </span>
-        <span><span></span> </span>
-        <span><span></span> </span>
-        <span><span></span> </span>
-        <span><span></span> </span>
-        <span><span></span> </span>
-        <span><span></span> </span>
-        <span><span></span> </span>
-        <span><span></span> </span>
-        <span><span></span> </span>
-        <span><span></span> </span>
-        <span><span></span> </span>
-        <span><span></span> </span>
-        <span><span></span> </span>
-        <span><span></span> </span>
-        <span><span></span> </span>
-        <span><span></span> </span>
-        <span><span></span> </span>
-        <span><span></span> </span>
-        <span><span></span> </span>
-        <span><span></span> </span>
-        <span><span></span> </span>
-        <span><span></span> </span>
-        <span><span></span> </span>
-        <span><span></span> </span>
-        <span><span></span> </span>
-        <span><span></span> </span>
-        <span><span></span> </span>
-        <span><span></span> </span>
-        <span><span></span> </span>
-        <span><span></span> </span>
-        <span><span></span> </span>
-        <span><span></span> </span>
-        <span><span></span> </span>
-        <span><span></span> </span>
-        <span><span></span> </span>
-        <span><span></span> </span>
-        <span><span></span> </span>
-        <span><span></span> </span>
-        <span><span></span> </span>
-        <span><span></span> </span>
-        <span><span></span> </span>
-        <span><span></span> </span>
-        <span><span></span> </span>
-        <span><span></span> </span>
-        <span><span></span> </span>
-        <span><span></span> </span>
-        <span><span></span> </span>
-        <span><span></span> </span>
-        <span><span></span> </span>
-        <span><span></span> </span>
-        <span><span></span> </span>
-        <span><span></span> </span>
-        <span><span></span> </span>
-        <span><span></span> </span>
-        <span><span></span> </span>
-        <span><span></span> </span>
-        <span><span></span> </span>
-        <span><span></span> </span>
-        <span><span></span> </span>
-        <span><span></span> </span>
-        <span><span></span> </span>
-        <span><span></span> </span>
-        <span><span></span> </span>
-        <span><span></span> </span>
-        <span><span></span> </span>
-        <span><span></span> </span>
-        <span><span></span> </span>
-        <span><span></span> </span>
-        <span><span></span> </span>
-        <span><span></span> </span>
-        <span><span></span> </span>
-        <span><span></span> </span>
-        <span><span></span> </span>
-        <span><span></span> </span>
-        <span><span></span> </span>
-        <span><span></span> </span>
-        <span><span></span> </span>
-        <span><span></span> </span>
-        <span><span></span> </span>
-        <span><span></span> </span>
-        <span><span></span> </span>
-        <span><span></span> </span>
-        <span><span></span> </span>
+        {[...Array(150)].map((e, i) => <span key={i}><span></span></span>)
+        }
+
       </figure>
     </div>)
 }

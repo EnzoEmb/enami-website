@@ -21,3 +21,24 @@
   align-items: center;
   justify-content: center;
 }
+
+
+.minititle {
+  color: $c-cyan;
+  text-transform: uppercase;
+  font-size: 13px;
+  letter-spacing: 0.15em;
+  display: flex;
+  align-items: center;
+  line-height: 1;
+  margin: 0;
+  padding: 50px 0;
+  &:after {
+    margin-left: 10px;
+    flex-grow: 1;
+    content: "";
+    display: block;
+    height: 1px;
+    background-color: #10387b;
+  }
+}
