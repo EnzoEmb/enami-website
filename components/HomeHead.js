@@ -2,15 +2,14 @@ import { useEffect } from 'react';
 // import dynamic from 'next/dynamic'
 import charming from 'charming';
 
+import { useMediaQuery } from 'react-responsive'
 
-// import { useEffect } from 'react';
-
-import * as enami from 'enami';
+import enami from 'enami';
 
 export default function HomeHead() {
   useEffect(() => {
 
-    const element = document.querySelectorAll('[data-splitting]')
+    const element = document.querySelectorAll('[data-charming]')
     element.forEach(e => {
       charming(e, {
         setClassName: function (index, letter) {
@@ -22,20 +21,21 @@ export default function HomeHead() {
 
 
     new enami({
-      threshold: .5
+      threshold: .5,
+      selector: '#top'
     });
 
   })
-  return (
+const isTabletOrMobile = useMediaQuery({ query: '(max-width: 600px)' })
+return (
 
     <div id="top">
 
 
       <header id="main-header">
-        <h1 data-splitting="" data-enami-once="true" data-enami-children="span" data-enami-stagger=".05s">enami.js</h1>
+        <h1 data-charming="" data-enami-once="true" data-enami-children="span" data-enami-stagger=".05s">enami.js</h1>
 
-        <h2 data-splitting="" data-enami-children="span" data-enami-stagger=".05s" data-enami-reset
-          data-enami-delay=".4s">a simple animation-<br />on-scroll library</h2>
+        <h2 data-charming="" data-enami-children="span" data-enami-stagger=".05s" data-enami-reset data-enami-delay=".4s">a simple animation-<br />on-scroll library</h2>
         <div className="badge">only 3kb minified!</div>
         <div className="buttons">
           <a href="#" className="btn-green">Download</a>
@@ -43,11 +43,9 @@ export default function HomeHead() {
         </div>
       </header>
 
-
-      <figure data-enami-children="span > span" data-enami-stagger=".05s" data-enami-delay="0">
-        {[...Array(150)].map((e, i) => <span key={i}><span></span></span>)
-        }
-
-      </figure>
+    { !isTabletOrMobile ? <figure data-enami-children="span > span" data-enami-stagger=".05s" data-enami-delay="0">
+        {[...Array(150)].map((e, i) => <span key={i}><span></span></span>)}
+      </figure> : null}
+      
     </div>)
 }

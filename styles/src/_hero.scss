@@ -12,7 +12,8 @@
         font-size: 70px;
         color: $c-cyan;
         span {
-            display: inline-block;
+                will-change: transform;
+                display: inline-block;
 
             visibility: hidden;
             transition: none;
@@ -28,7 +29,8 @@
         font-size: 50px;
         margin: 0 0 15px 0;
         span {
-            display: inline-block;
+                will-change: transform;
+                display: inline-block;
 
             visibility: hidden;
             &.letter- {
@@ -137,7 +139,14 @@
                 transform: scale(0);
                 transition: transform 1s;
                 transition-timing-function: cubic-bezier(0.68, -0.55, 0.265, 1.5);
+                will-change: transform;
             }
+            // @media (max-width: 600px) {
+            //     transform: scale(1);
+            //     > span {
+            //         transform: scale(1);
+            //     }
+            // }
         }
     }
 }
