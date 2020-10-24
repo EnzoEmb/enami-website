@@ -32,6 +32,7 @@
                 opacity: 0;
                 // fill: red;
                 fill: #00fff6;
+                will-change: fill, opacity, transform;
             }
             @keyframes logo_animation_i {
                 // 0% {
@@ -91,6 +92,7 @@
             &[data-enami-in] {
                 visibility: visible;
                 animation: 0.5s logo_animation forwards ease-out;
+                will-change: opacity, transform;
             }
             @keyframes logo_animation {
                 from {
