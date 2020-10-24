@@ -2,6 +2,8 @@ import HomeHead from '../components/HomeHead';
 import Animatron from '../components/Animatron';
 import Demo from '../components/Demo';
 import Minititle from '../components/Minititle';
+import About from '../components/About';
+import HowTo from '../components/HowTo';
 
 // import { useEffect } from 'react';
 
@@ -23,15 +25,10 @@ export default function Home() {
 
       <HomeHead />
 
-      <section id="about" data-enami="fade-up">
-        <div className="container">
-          <Minititle>ABOUT</Minititle>
-          <p data-splitting-lines data-enami-reset data-enami-children=".word" data-enami-stagger=".05s">enami.js provides
-          an easy way to animate elements on visibility, it uses the Intersection Observer API to add attributes and
-          inline styles to elements visible on the screen. It also includes a css library with multiple animations you
-          can use.</p>
-        </div>
-      </section>
+      <About />
+
+      <HowTo />
+
 
       <section id="animations">
         <div className="container">

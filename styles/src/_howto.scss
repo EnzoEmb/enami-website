@@ -1,0 +1,17 @@
+#howto {
+  letter-spacing: 0.01em;
+  code {
+    background-color: rgba(0, 0, 0, 0.2);
+    padding: 10px;
+    border-radius: 5px;
+    display: inline-block;
+    user-select: auto;
+  }
+  span {
+    user-select: none;
+  }
+  .number {
+    color: $c-pink;
+    font-weight: bold;
+  }
+}

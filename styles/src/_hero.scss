@@ -24,7 +24,8 @@
             // display: none;
             fill: #001b48;
             // fill: #00fff6;
-            animation: .6s logo_animation_i .95s forwards;
+            animation: 0.6s logo_animation_i 0.95s forwards;
+            will-change: transform;
             // animation-delay: 1.2s;
             // opacity: 0.5;
             // animation-timing-function: ease-out;
@@ -54,6 +55,7 @@
             visibility: hidden;
             transition: none;
             transform: scale(0.5) rotate(0.005deg);
+            will-change: transform, opacity;
             opacity: 0;
             &[data-enami-in] {
                 visibility: visible;
@@ -140,13 +142,12 @@
         // h1 {
         //     font-size: 50px;
         // }
-        .logo{
-            svg{
+        .logo {
+            svg {
                 width: 150px;
             }
-            .enami-logo-i{
-            animation: .6s logo_animation_i 1s forwards;
-
+            .enami-logo-i {
+                animation: 0.6s logo_animation_i 1s forwards;
             }
         }
         h2 {
@@ -188,6 +189,7 @@
         display: flex;
         flex-wrap: wrap;
         justify-content: space-between;
+        pointer-events: none;
         span {
             background-image: url("../../public/img/pattern.svg");
             width: clamp(50px, 5.5555vw, 5.5555vw);
@@ -198,6 +200,7 @@
             background-repeat: no-repeat;
             background-size: 80%;
             > span {
+                will-change: transform;
                 &[data-enami-in] {
                     transform: scale(1);
                 }
@@ -213,7 +216,6 @@
                 transform: scale(0);
                 transition: transform 1s;
                 transition-timing-function: cubic-bezier(0.68, -0.55, 0.265, 1.5);
-                will-change: transform;
             }
             // @media (max-width: 600px) {
             //     transform: scale(1);
