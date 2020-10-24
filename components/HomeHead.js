@@ -68,8 +68,32 @@ export default function HomeHead() {
       </header>
 
       { !isTabletOrMobile ? <figure data-enami-children="span > span" data-enami-stagger=".05s" data-enami-delay="0">
-        {[...Array(160)].map((e, i) => <span key={i}><span></span></span>)}
-      </figure> : null}
+        <div class="row">
+          {[...Array(16)].map((e, i) => <span key={i}><span></span></span>)}
+        </div>
+        <div class="row">
+          {[...Array(16)].map((e, i) => <span key={i}><span></span></span>)}
+        </div>
+        <div class="row">
+          {[...Array(16)].map((e, i) => <span key={i}><span></span></span>)}
+        </div>
+        <div class="row">
+          {[...Array(16)].map((e, i) => <span key={i}><span></span></span>)}
+        </div>
+        <div class="row">
+          {[...Array(16)].map((e, i) => <span key={i}><span></span></span>)}
+        </div>
+        <div class="row">
+          {[...Array(16)].map((e, i) => <span key={i}><span></span></span>)}
+        </div>
+        <div class="row">
+          {[...Array(16)].map((e, i) => <span key={i}><span></span></span>)}
+        </div>
+      </figure>
+
+
+        : null}
+
 
     </div>)
 }

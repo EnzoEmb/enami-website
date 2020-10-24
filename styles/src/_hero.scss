@@ -22,10 +22,10 @@
             will-change: transform;
             transform: translateY(12px) rotate(0.005deg);
             &[data-enami-in] {
-                animation-duration: .6s !important;
+                animation-duration: 0.6s !important;
                 animation-name: logo_animation_i !important;
                 animation-fill-mode: forwards !important;
-                animation-delay: .75s !important;
+                animation-delay: 0.75s !important;
                 // animation: 0.6s logo_animation_i forwards !important;
             }
             @keyframes logo_animation_i {
@@ -189,16 +189,32 @@
         flex-wrap: wrap;
         justify-content: space-between;
         pointer-events: none;
+        .row {
+            display: flex;
+            // font-size: 0;
+            &:not(:last-child){
+            height: 20px;
+            @media(min-width: 1450px){
+            height: auto;
+
+            }
+
+            }
+            &:nth-child(2n) {
+            // margin-left: 40px;v
+                margin-left: 3.25%;
+            }
+        }
         span {
             background-image: url("../../public/img/pattern.svg");
-            width: clamp(50px, 5.5555vw, 5.5555vw);
-            height: clamp(50px, 5.5555vw, 5.5555vw);
+            width: clamp(70px, 7vw, 7vw);
+            height: clamp(60px, 7vw, 7vw);
             display: inline-block;
             background-size: contain;
             background-position: center;
             background-repeat: no-repeat;
             background-size: 80%;
-            &:nth-child()
+            // &:nth-child()
             > span {
                 will-change: transform;
                 &[data-enami-in] {
