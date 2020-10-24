@@ -18,19 +18,16 @@
             fill: #00fff6;
         }
         .enami-logo-i {
-            .enami-logo-letter {
-                fill: inherit;
-            }
-            // display: none;
             fill: #001b48;
-            // fill: #00fff6;
-            animation: 0.6s logo_animation_i 0.95s forwards;
             will-change: transform;
-            // animation-delay: 1.2s;
-            // opacity: 0.5;
-            // animation-timing-function: ease-out;
-            // animation-timing-function: cubic-bezier(0, 1, 0, 2);
             transform: translateY(12px) rotate(0.005deg);
+            &[data-enami-in] {
+                animation-duration: .6s !important;
+                animation-name: logo_animation_i !important;
+                animation-fill-mode: forwards !important;
+                animation-delay: .75s !important;
+                // animation: 0.6s logo_animation_i forwards !important;
+            }
             @keyframes logo_animation_i {
                 0% {
                     transform: translateY(12px) rotate(0.005deg);
@@ -47,6 +44,9 @@
                     fill: #ff7a6b;
                 }
             }
+            .enami-logo-letter {
+                fill: inherit;
+            }
         }
         .enami-logo {
             transform-origin: 50% 50%;
@@ -60,7 +60,6 @@
             &[data-enami-in] {
                 visibility: visible;
                 animation: 0.5s logo_animation forwards ease-out;
-                // animation: 1s logo_animation forwards cubic-bezier(0.68, -0.55, 0.265, 1);
             }
             @keyframes logo_animation {
                 from {
@@ -199,6 +198,7 @@
             background-position: center;
             background-repeat: no-repeat;
             background-size: 80%;
+            &:nth-child()
             > span {
                 will-change: transform;
                 &[data-enami-in] {
