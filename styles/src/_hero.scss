@@ -28,33 +28,11 @@
                 animation-fill-mode: forwards !important;
                 animation-delay: 0.65s !important;
                 animation-timing-function: ease;
-                // animation: 0.6s logo_animation_i forwards !important;
                 opacity: 0;
-                // fill: red;
                 fill: #00fff6;
                 will-change: fill, opacity, transform;
             }
             @keyframes logo_animation_i {
-                // 0% {
-                //     transform: translateY(12px) rotate(0.005deg) scaleX(.8);
-                //     fill: #001b48;
-                // }
-                // 50% {
-                //     transform: translateY(-10px) rotate(0.005deg)scaleX(1);
-                //     fill: #00fff6;
-                // }
-                // 100% {
-                //     transform: translateY(0px) rotate(0.005deg);
-                //     opacity: 1;
-                //     fill: #ff7a6b;
-                // }
-
-                //   0% { transform: translateY(20%); }
-                //   30% { transform: translateY(-15%) ; }
-                //   60% { transform: translateY(10%) ; }
-                //   90% { transform: translateY(-5%) ; }
-                //   100% { transform: translateY(0%); }
-
                 0% {
                     opacity: 0;
                     transform: translateY(13px) scaleX(0.8);
@@ -106,24 +84,6 @@
             }
         }
     }
-    // h1 {
-    //     margin: 0;
-    //     font-size: 70px;
-    //     color: $c-cyan;
-    //     span {
-    //         will-change: transform;
-    //         display: inline-block;
-
-    //         visibility: hidden;
-    //         transition: none;
-    //         transform: scale(0.5) rotate(0.005deg);
-    //         opacity: 0;
-    //         &[data-enami-in] {
-    //             visibility: visible;
-    //             animation: 0.5s hexa forwards cubic-bezier(0.68, -0.55, 0.265, 1);
-    //         }
-    //     }
-    // }
     h2 {
         font-size: 50px;
         margin: 0 0 15px 0;
@@ -171,9 +131,6 @@
 
     @media (max-width: 600px) {
         min-height: 350px;
-        // h1 {
-        //     font-size: 50px;
-        // }
         .logo {
             svg {
                 width: 150px;
@@ -224,7 +181,6 @@
         pointer-events: none;
         .row {
             display: flex;
-            // font-size: 0;
             &:not(:last-child) {
                 height: 20px;
                 @media (min-width: 1450px) {
@@ -232,7 +188,6 @@
                 }
             }
             &:nth-child(2n) {
-                // margin-left: 40px;v
                 margin-left: 3.25%;
             }
         }
@@ -264,12 +219,6 @@
                 transition: transform 1s;
                 transition-timing-function: cubic-bezier(0.68, -0.55, 0.265, 1.5);
             }
-            // @media (max-width: 600px) {
-            //     transform: scale(1);
-            //     > span {
-            //         transform: scale(1);
-            //     }
-            // }
         }
     }
 }

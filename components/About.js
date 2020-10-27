@@ -36,7 +36,7 @@ export default function About() {
     <section id="about" >
       <div className="container">
         <Minititle>ABOUT</Minititle>
-        <div data-charming-lines data-enami-children=".word" data-enami-stagger=".02s">
+        <div data-charming-lines data-enami-children=".word" data-enami-stagger=".01s">
           <p>enami.js provides an easy way to animate elements on visibility, it uses the Intersection Observer API to add attributes and inline styles to elements visible on the screen. It also includes a css library with multiple animations you can use.</p>
         </div>
       </div>

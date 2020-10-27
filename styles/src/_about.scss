@@ -7,7 +7,7 @@
     text-align: justify;
     max-width: 650px;
     .word {
-      transform: translate3d(0, 25px, 0) rotate(0.02deg);
+      transform: translate3d(0, 10px, 0) rotate(0.02deg);
       opacity: 0;
       display: inline-block;
       will-change: opacity, transform;
@@ -16,7 +16,7 @@
         transform-origin: top left;
         @keyframes fup {
           from {
-            transform: translate3d(0, 25px, 0) rotate(0.02deg);
+            transform: translate3d(0, 10px, 0) rotate(0.02deg);
             opacity: 0;
           }
           to {

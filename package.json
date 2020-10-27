@@ -10,7 +10,7 @@
   "dependencies": {
     "charming": "^3.0.2",
     "enami": "^0.1.1",
-    "next": "9.5.5",
+    "next": "^10.0.0",
     "normalize.css": "^8.0.1",
     "react": "16.14.0",
     "react-dom": "16.14.0",
