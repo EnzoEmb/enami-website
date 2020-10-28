@@ -140,14 +140,14 @@
     @media (max-width: 600px) {
         min-height: 350px;
         // .logo {
-            // svg {
-            //     width: 150px;
-            // }
-            // .enami-logo-i {
-            //     animation: 0.6s logo_animation_i 1s forwards;
-            // }
+        // svg {
+        //     width: 150px;
         // }
-        .enami-logo{
+        // .enami-logo-i {
+        //     animation: 0.6s logo_animation_i 1s forwards;
+        // }
+        // }
+        .enami-logo {
             font-size: 50px;
         }
         h2 {
@@ -213,11 +213,8 @@
             background-size: 80%;
             // &:nth-child()
             > span {
+                transform: scale(0);
                 will-change: transform;
-                &[data-enami-in] {
-                    transform: scale(1);
-                }
-                content: "";
                 background-image: url("../../public/img/pattern-fill.svg");
                 display: inline-block;
                 width: 100%;
@@ -226,9 +223,22 @@
                 background-position: center;
                 background-repeat: no-repeat;
                 background-size: 80%;
-                transform: scale(0);
-                transition: transform 1s;
-                transition-timing-function: cubic-bezier(0.68, -0.55, 0.265, 1.5);
+                // transform: scale(0);
+                // transition: transform 1s;
+                &[data-enami-in] {
+                    transform: scale(1);
+                    animation: 1s bg 0.5s;
+                    animation-fill-mode: forwards;
+                    animation-timing-function: cubic-bezier(0.68, 0, 0.265, 1.5);
+                    @keyframes bg {
+                        from {
+                            transform: scale(0);
+                        }
+                        to {
+                            transform: scale(1);
+                        }
+                    }
+                }
             }
         }
     }
