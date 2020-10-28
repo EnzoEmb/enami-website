@@ -104,14 +104,14 @@
                 width: 10px;
             }
             transition: none;
-            transform: translate3d(0, 10px, 0) rotate(0.02deg);
+            transform: translate3d(0, 50px, 0) rotate(0.02deg);
             opacity: 0;
             &[data-enami-in] {
                 visibility: visible;
                 animation: 0.7s fup forwards cubic-bezier(0.68, -0.55, 0.265, 2.4);
                 @keyframes fup {
                     from {
-                        transform: translate3d(0, 10px, 0) rotate(0.02deg);
+                        transform: translate3d(0, 50px, 0) rotate(0.02deg);
                         opacity: 0;
                     }
                     to {
