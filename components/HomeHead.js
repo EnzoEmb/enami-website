@@ -1,9 +1,6 @@
 import { useEffect } from 'react';
-// import dynamic from 'next/dynamic'
 import charming from 'charming';
-
 import { useMediaQuery } from 'react-responsive'
-
 import enami from 'enami';
 
 export default function HomeHead() {
