@@ -7,24 +7,29 @@
     text-align: justify;
     max-width: 650px;
     .word {
-      transform: translate3d(0, 10px, 0) rotate(0.02deg);
-      opacity: 0;
-      display: inline-block;
-      will-change: opacity, transform;
-      &[data-enami-in] {
-        animation: 1s fup forwards;
-        transform-origin: top left;
-        @keyframes fup {
-          from {
-            transform: translate3d(0, 10px, 0) rotate(0.02deg);
-            opacity: 0;
-          }
-          to {
-            transform: translate3d(0, 0, 0) rotate(0deg);
-            opacity: 1;
-          }
-        }
+      visibility: hidden;
+      [data-enami-in]{
+      animation-name: fadeUp;
+
       }
+      // transform: translate3d(0, 10px, 0) rotate(0.02deg);
+      // opacity: 0;
+      display: inline-block;
+      // will-change: opacity, transform;
+      // &[data-enami-in] {
+      //   animation: 1s fup forwards;
+      //   transform-origin: top left;
+      //   @keyframes fup {
+      //     from {
+      //       transform: translate3d(0, 10px, 0) rotate(0.02deg);
+      //       opacity: 0;
+      //     }
+      //     to {
+      //       transform: translate3d(0, 0, 0) rotate(0deg);
+      //       opacity: 1;
+      //     }
+      //   }
+      // }
     }
 
     //   .word {

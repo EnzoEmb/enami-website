@@ -73,9 +73,9 @@ a {
     height: 300px;
     border-radius: 6px;
     background-color: rgb(0, 29, 82);
-    box-shadow: 0px 1px 5px 0px rgba(0, 0, 0, 0.2), 0px 4px 10px 0px rgba(0, 0, 0, 0.2),
-      0px 1px 30px 0px rgba(0, 0, 0, 0.2), 0px 23px 60px 0px rgba(0, 0, 0, 0.2),
-      inset 0px 0px 0px 1px rgba(0, 0, 0, 0.15);
+    // box-shadow: 0px 1px 5px 0px rgba(0, 0, 0, 0.2), 0px 4px 10px 0px rgba(0, 0, 0, 0.2),
+      // 0px 1px 30px 0px rgba(0, 0, 0, 0.2), 0px 23px 60px 0px rgba(0, 0, 0, 0.2),
+      // inset 0px 0px 0px 1px rgba(0, 0, 0, 0.15);
 
     .demo-content {
       padding: 20px;
@@ -170,17 +170,17 @@ a {
     height: 50px;
     background-color: #002665;
     border-radius: 6px;
-    box-shadow: 0px 1px 5px 0px rgba(0, 0, 0, 0.2), 0px 4px 10px 0px rgba(0, 0, 0, 0.2),
-      0px 1px 30px 0px rgba(0, 0, 0, 0.2), 0px 23px 60px 0px rgba(0, 0, 0, 0.2),
-      inset 0px 0px 0px 1px rgba(0, 0, 0, 0.15);
+    // box-shadow: 0px 1px 5px 0px rgba(0, 0, 0, 0.2), 0px 4px 10px 0px rgba(0, 0, 0, 0.2),
+    //   0px 1px 30px 0px rgba(0, 0, 0, 0.2), 0px 23px 60px 0px rgba(0, 0, 0, 0.2),
+    //   inset 0px 0px 0px 1px rgba(0, 0, 0, 0.15);
   }
   .animation-demo {
     height: 300px;
     border-radius: 6px;
     background-color: rgb(0, 29, 82);
-    box-shadow: 0px 1px 5px 0px rgba(0, 0, 0, 0.2), 0px 4px 10px 0px rgba(0, 0, 0, 0.2),
-      0px 1px 30px 0px rgba(0, 0, 0, 0.2), 0px 23px 60px 0px rgba(0, 0, 0, 0.2),
-      inset 0px 0px 0px 1px rgba(0, 0, 0, 0.15);
+    // box-shadow: 0px 1px 5px 0px rgba(0, 0, 0, 0.2), 0px 4px 10px 0px rgba(0, 0, 0, 0.2),
+    //   0px 1px 30px 0px rgba(0, 0, 0, 0.2), 0px 23px 60px 0px rgba(0, 0, 0, 0.2),
+    //   inset 0px 0px 0px 1px rgba(0, 0, 0, 0.15);
     display: flex;
   }
   .animations-zone {

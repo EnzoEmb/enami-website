@@ -17,7 +17,7 @@ export default function HomeHead() {
 
 
     new enami({
-      threshold: .5,
+      // threshold: .5,
       selector: '#top'
     });
 

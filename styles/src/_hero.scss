@@ -15,7 +15,9 @@
             transform-origin: 50% 50%;
             display: inline-block;
             visibility: hidden;
-            animation-name: fadeUp;
+            &[data-enami-in] {
+                animation-name: fadeUp;
+            }
             // transition-delay: 0s !important;
             // transition-duration: 0s !important;
             color: $c-cyan;
@@ -30,8 +32,9 @@
             display: inline-block;
             visibility: hidden;
 
-            animation-name: fadeUp;
-            // transition-delay: 0s !important;
+            &[data-enami-in] {
+                animation-name: fadeUp;
+            } // transition-delay: 0s !important;
             // transition-duration: 0s !important;
             &.letter- {
                 width: 10px;
@@ -146,7 +149,7 @@
                 // transition: transform 1s;
                 visibility: hidden;
                 &[data-enami-in] {
-                    transform: scale(1);
+                    // transform: scale(1);
                     animation-name: bg;
                     // animation-fill-mode: forwards;
                     animation-timing-function: cubic-bezier(0.68, 0, 0.265, 1.5);
