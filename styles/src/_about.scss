@@ -8,9 +8,8 @@
     max-width: 650px;
     .word {
       visibility: hidden;
-      [data-enami-in]{
-      animation-name: fadeUp;
-
+      &[data-enami-in] {
+        animation-name: fadeUp;
       }
       // transform: translate3d(0, 10px, 0) rotate(0.02deg);
       // opacity: 0;
