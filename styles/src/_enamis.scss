@@ -54,22 +54,23 @@ Cambiando el scale inicial de 0 a 0.2 soluciona en parte el bug
 
 h2 {
   .char {
-    visibility: hidden;
+    // visibility: hidden;
     &[data-enami-in] {
-      visibility: visible;
+      // visibility: visible;
       // animation: .5s fup forwards cubic-bezier(0.19, 1, 0.22, 1);
       // animation: .5s hexa forwards  cubic-bezier(0.680, -0.550, 0.265, 2.4);
-      animation: 0.5s fup forwards cubic-bezier(0.68, -0.55, 0.265, 2.4);
-      @keyframes fup {
-        from {
-          transform: translate3d(0, 10px, 0) rotate(0.02deg);
-          opacity: 0;
-        }
-        to {
-          transform: translate3d(0, 0, 0) rotate(0deg);
-          opacity: 1;
-        }
-      }
+      // animation: 0.5s fup forwards cubic-bezier(0.68, -0.55, 0.265, 2.4);
+      animation-name: fadeUp;
+      // @keyframes fup {
+      //   from {
+      //     transform: translate3d(0, 10px, 0) rotate(0.02deg);
+      //     opacity: 0;
+      //   }
+      //   to {
+      //     transform: translate3d(0, 0, 0) rotate(0deg);
+      //     opacity: 1;
+      //   }
+      // }
     }
   }
 }

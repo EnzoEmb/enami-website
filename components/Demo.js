@@ -6,7 +6,7 @@ export default function Demo(props){
       <div className="container">
         <aside>
           <h2 className="demo-title">{props.title}</h2>
-    <p>{props.summary}</p>
+          <p>{props.summary}</p>
         </aside>
         <DemoContent />
       </div>

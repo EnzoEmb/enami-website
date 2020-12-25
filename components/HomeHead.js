@@ -13,7 +13,6 @@ export default function HomeHead() {
           return `index-${index} letter-${letter}`
         }
       })
-
     });
 
 
@@ -32,7 +31,7 @@ export default function HomeHead() {
       <header id="main-header">
         <h1 className="enami-logo" data-charming="" data-enami-once="true" data-enami-children="span" data-enami-stagger=".1s">enami.js</h1>
 
-        <h2 data-charming="" data-enami-children="span" data-enami-stagger=".05s" data-enami-reset data-enami-delay=".4s">a simple animation-<br />on-scroll library</h2>
+        <h2 data-charming="" data-enami-children="span" data-enami-stagger=".02s" data-enami-reset data-enami-delay=".8s">a simple animation-<br />on-scroll library</h2>
         <div className="badge">only 3kb minified!</div>
         <div className="buttons">
           <a href="#" className="btn-green">Download</a>
