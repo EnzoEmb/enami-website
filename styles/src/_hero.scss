@@ -144,6 +144,7 @@
                 background-size: 80%;
                 // transform: scale(0);
                 // transition: transform 1s;
+                visibility: hidden;
                 &[data-enami-in] {
                     transform: scale(1);
                     animation-name: bg;
@@ -155,6 +156,7 @@
                         }
                         to {
                             transform: scale(1);
+                            visibility: visible;
                         }
                     }
                 }
