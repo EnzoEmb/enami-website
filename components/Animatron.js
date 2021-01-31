@@ -1,15 +1,6 @@
-import { useState, useEffect } from 'react';
-// import enami from 'enami';
+import { useState } from 'react';
 
 export default function Animatron() {
-    // useEffect(() => {
-
-    //     new enami({
-    //         threshold: .5,
-    //         selector: '#animatron'
-    //     });
-
-    // })
 
 
     var [atributo, setAtributo] = useState(0);

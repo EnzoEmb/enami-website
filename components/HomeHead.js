@@ -32,10 +32,10 @@ export default function HomeHead() {
         <h1 className="enami-logo" data-charming="" data-enami-once="true" data-enami-children="span" data-enami-stagger=".1s">enami.js</h1>
 
         <h2 data-charming="" data-enami-children="span" data-enami-stagger=".02s" data-enami-reset data-enami-delay=".8s">a simple animation-<br />on-scroll library</h2>
-        <div className="badge">only 3kb minified!</div>
+        <div className="badge">5kb minified!</div>
         <div className="buttons">
-          <a href="#" className="btn-green">Download</a>
-          <a href="#" className="btn-green--border">Check on Github</a>
+          <a href="https://github.com/EnzoEmb/enami/archive/0.4.0-alpha.zip" className="btn-green">Download</a>
+          <a href="https://github.com/EnzoEmb/enami" className="btn-green--border">Check on Github</a>
         </div>
       </header>
 

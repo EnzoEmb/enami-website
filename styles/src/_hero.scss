@@ -14,12 +14,11 @@
         span {
             transform-origin: 50% 50%;
             display: inline-block;
-            visibility: hidden;
+            // visibility: hidden;
+            opacity: 0;
             &[data-enami-in] {
                 animation-name: fadeUp;
             }
-            // transition-delay: 0s !important;
-            // transition-duration: 0s !important;
             color: $c-cyan;
         }
     }
@@ -30,7 +29,8 @@
         span {
             // will-change: transform;
             display: inline-block;
-            visibility: hidden;
+            // visibility: hidden;
+            opacity: 0;
 
             &[data-enami-in] {
                 animation-name: fadeUp;

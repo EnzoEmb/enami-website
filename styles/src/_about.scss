@@ -7,81 +7,11 @@
     text-align: justify;
     max-width: 650px;
     .word {
-      visibility: hidden;
+      opacity: 0;
       &[data-enami-in] {
         animation-name: fadeUp;
       }
-      // transform: translate3d(0, 10px, 0) rotate(0.02deg);
-      // opacity: 0;
       display: inline-block;
-      // will-change: opacity, transform;
-      // &[data-enami-in] {
-      //   animation: 1s fup forwards;
-      //   transform-origin: top left;
-      //   @keyframes fup {
-      //     from {
-      //       transform: translate3d(0, 10px, 0) rotate(0.02deg);
-      //       opacity: 0;
-      //     }
-      //     to {
-      //       transform: translate3d(0, 0, 0) rotate(0deg);
-      //       opacity: 1;
-      //     }
-      //   }
-      // }
     }
-
-    //   .word {
-    //     transform: translate3d(0, 10px, 0) rotate(2deg) rotate(0.02deg);
-    //     opacity: 0;
-    //     display: inline-block;
-    //     &[data-enami-in] {
-    //       animation: 1s fup forwards;
-    //       transform-origin: top left;
-    //       @keyframes fup {
-    //         from {
-    //           transform: translate3d(0, 10px, 0) rotate(2deg) rotate(0.02deg);
-    //           opacity: 0;
-    //         }
-    //         to {
-    //           transform: translate3d(0, 0, 0) rotate(0deg) rotate(0deg);
-    //           opacity: 1;
-    //         }
-    //       }
-    //     }
-    //   }
-    //   .line {
-    //     overflow: hidden;
-    //     display: inline-flex;
-    //     visibility: hidden;
-    //     width: 100%;
-    //     // display: flex;
-    //     // justify-content: space-between;
-    //     .whitespace {
-    //       display: inline-block;
-    //       width: 0.3em;
-    //       flex-shrink: 0;
-    //     }
-    //     // &:last-child{
-    //     //   display: inline-block;
-    //     // }
-    //     &[data-enami-in] {
-    //       visibility: visible;
-    //       animation: 1s fup forwards;
-    //       // animation-timing-function: cubic-bezier(0.84, 0, 0.16, 1);
-    //       // animation-timing-function: ease-in;
-    //       transform-origin: top left;
-    //       @keyframes fup {
-    //         from {
-    //           transform: translate3d(0, 20px, 0) rotate(2deg) rotate(0.02deg);
-    //           opacity: 0;
-    //         }
-    //         to {
-    //           transform: translate3d(0, 0, 0) rotate(0deg) rotate(0deg);
-    //           opacity: 1;
-    //         }
-    //       }
-    //     }
-    //   }
   }
 }

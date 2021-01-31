@@ -8,7 +8,7 @@ export default function HowToCode(props) {
       <code>
         {props.children}
       </code>
-      <button title="Copy to clipboard">Copy</button>
+      <button title="Copy to clipboard"><img src={"img/clipboard.svg"} alt="Copy to clipboard"/></button>
     </p>
   )
 }

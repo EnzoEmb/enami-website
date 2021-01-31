@@ -5,19 +5,8 @@ import Minititle from '../components/Minititle';
 import About from '../components/About';
 import HowTo from '../components/HowTo';
 
-// import { useEffect } from 'react';
-
-// import * as enami from 'enami';
-
 export default function Home() {
 
-
-  // useEffect(() => {
-  //   const asd = new enami({
-  //     once: false,
-  //     threshold: .5
-  //   });
-  // });
 
 
   return (
@@ -67,7 +56,6 @@ export default function Home() {
 
       <div className="container">
         <Minititle>METHODS</Minititle>
-
       </div>
 
 
@@ -77,7 +65,6 @@ export default function Home() {
 
       <div className="container">
         <Minititle>EVENTS</Minititle>
-
       </div>
 
 

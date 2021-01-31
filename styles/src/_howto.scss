@@ -9,10 +9,10 @@
     max-width: 100%;
     overflow: auto;
     color: #757b81;
-    font-family: 'Space Mono', monospace;
+    font-family: "Space Mono", monospace;
     letter-spacing: -0.03em;
     font-size: 13px;
-    vertical-align: -.8em;
+    vertical-align: -0.8em;
     margin-left: 5px;
     line-height: 1.4em;
   }
@@ -28,15 +28,31 @@
       border-bottom: 1px solid #f3c56f;
       color: #f3c56f;
     }
-    &.grey{
+    &.grey {
       color: #b5bfcf;
     }
-    &.cyan{
+    &.cyan {
       color: #5bcaf9;
     }
   }
   .number {
     color: $c-pink;
     font-weight: bold;
+  }
+  button {
+    background: rgba(0, 0, 0, 0.2);
+    border: 0;
+    height: 38px;
+    width: 38px;
+    border-radius: 4px;
+    margin-left: 5px;
+    vertical-align: bottom;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    img {
+      width: 16px;
+    }
   }
 }
