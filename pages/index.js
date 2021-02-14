@@ -5,7 +5,7 @@ import Minititle from '../components/Minititle';
 import About from '../components/About';
 import HowTo from '../components/HowTo';
 import Head from 'next/head'
-
+import Events from '../components/Events';
 import { Toaster } from 'react-hot-toast';
 
 
@@ -74,39 +74,14 @@ export default function Home() {
 
 
 
-      {/* 
-     <Demo title="Demo component title" summary={["Add the ", <span className="badge" key={0}>data-enami="animation-name"</span>, " attribute on an elements, and all selector inside that match the selector will be animated when the parent is visible."]} />
- 
-
-      <Demo title="Parent" summary={["Add the ", <span className="badge" key={0}>data-enami="animation-name"</span>, " attribute on an elements, and all selector inside that match the selector will be animated when the parent is visible."]} />
-
-
-
-      <Demo title="Stagger" summary={["Add the ", <span className="badge" key={0}>data-enami="animation-name"</span>, " attribute on an elements, and all selector inside that match the selector will be animated when the parent is visible."]} />
-
-
-      <Demo title="Animation Delay" summary={["Add the ", <span className="badge" key={0}>data-enami="animation-name"</span>, " attribute on an elements, and all selector inside that match the selector will be animated when the parent is visible."]} />
-
-
-      <Demo title="Animation Duration" summary={["Add the ", <span className="badge" key={0}>data-enami="animation-name"</span>, " attribute on an elements, and all selector inside that match the selector will be animated when the parent is visible."]} />
-
-
-
-      <Demo title="Animate Once" summary={["Add the ", <span className="badge" key={0}>data-enami="animation-name"</span>, " attribute on an elements, and all selector inside that match the selector will be animated when the parent is visible."]} /> */}
 
 
       <div className="container">
-        <Minititle>METHODS</Minititle>
+        <Minititle>METHODS AND EVENTS</Minititle>
+        <Events />
       </div>
 
 
-
-
-
-
-      <div className="container">
-        <Minititle>EVENTS</Minititle>
-      </div>
 
 
 
