@@ -28,7 +28,7 @@ function DemoContent() {
       selector: '#demo-stagger',
       // reset: false,
       // offset: '0% 0% -50% 0%',
-      // once: false,
+      once: false,
       // root: document.querySelector('#demo-stagger')
     });
 
@@ -45,7 +45,7 @@ function DemoContent() {
   return (
 
     <div className="demo-container" id="demo-stagger">
-      {tab == 'demo' ? <div className="demo-content" data-enami="fade-up" data-enami-children=".demo-dot" data-enami-stagger=".05s">
+      {tab == 'demo' ? <div className="demo-content" data-enami-animation="fade-up" data-enami-children=".demo-dot" data-enami-stagger=".05s">
         {[...Array(40)].map((e, i) =>
           <div className="demo-dot--container" key={i}>
             <div className="demo-dot" >{i + 1}</div>
