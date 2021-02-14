@@ -5,6 +5,7 @@ import About from '../components/About';
 import HowTo from '../components/HowTo';
 import Head from 'next/head'
 import Events from '../components/Events';
+import Footer from '../components/Footer';
 import { Toaster } from 'react-hot-toast';
 
 
@@ -83,6 +84,7 @@ export default function Home() {
 
 
 
+      <Footer />
 
 
 
