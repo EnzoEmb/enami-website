@@ -12,6 +12,12 @@ export default function Events() {
   useEffect(() => {
 
 
+    myEnami = new enami({
+      selector: '#demo-events',
+      once: false,
+      root: document.querySelector('#demo-events')
+    });
+
     // events
     enami18 = document.getElementById('e18')
     var events = document.getElementById('events-content')
@@ -24,16 +30,20 @@ export default function Events() {
       events.innerHTML += '<p><span>Item 18: </span> Out of viewport</p>'
       events.scrollTop = events.scrollHeight;
     });
-    enami18.addEventListener('enami:reset', function (e) {
-      events.innerHTML += '<p>Reset triggered</p>'
+    document.addEventListener('enami:reset', function (e) {
+      events.innerHTML += '<p><span>Document: </span> Reset triggered</p>'
       events.scrollTop = events.scrollHeight;
     });
-    enami18.addEventListener('enami:update', function (e) {
-      events.innerHTML += '<p>Update triggered</p>'
+    document.addEventListener('enami:update', function (e) {
+      events.innerHTML += '<p><span>Document: </span> Update triggered</p>'
       events.scrollTop = events.scrollHeight;
     });
-    enami18.addEventListener('enami:init', function (e) {
-      events.innerHTML += '<p>Init triggered</p>'
+    document.addEventListener('enami:init', function (e) {
+      events.innerHTML += '<p><span>Document: </span> Init triggered</p>'
+      events.scrollTop = events.scrollHeight;
+    });
+    document.addEventListener('enami:destroy', function (e) {
+      events.innerHTML += '<p><span>Document: </span> Destroy triggered</p>'
       events.scrollTop = events.scrollHeight;
     });
 
@@ -47,10 +57,6 @@ export default function Events() {
       once: false,
       root: document.querySelector('#demo-events')
     });
-    myEnami.addEventListener('enami:destroy', function (e) {
-      events.innerHTML += '<p>Destroy triggered</p>'
-      events.scrollTop = events.scrollHeight;
-    });
 
 
   }
@@ -58,13 +64,16 @@ export default function Events() {
   function methodDestroy() {
     myEnami.destroy();
   }
+  // function methodDestroyItem() {
+  //   myEnami.destroy('#e18');
+  // }
 
   function methodUpdate() {
     myEnami.update();
   }
 
   function methodReset() {
-    myEnami.reset();
+    myEnami.reset('#e18');
   }
 
 
@@ -125,7 +134,8 @@ export default function Events() {
           <div className="methods-content">
             <button onClick={methodInit}>Init</button>
             <button onClick={methodDestroy}>Destroy</button>
-            <button onClick={methodReset}>Reset</button>
+            {/* <button onClick={methodDestroyItem}>Destroy item 18</button> */}
+            <button onClick={methodReset}>Reset (Item 18)</button>
             <button onClick={methodUpdate}>Update</button>
           </div>
         </div>
