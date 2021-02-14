@@ -1,0 +1,90 @@
+.Events {
+  .EventsContainer {
+    border-radius: 6px;
+    background-color: #001d52;
+    display: flex;
+  }
+  .minititle {
+    padding: 0;
+    font-size: 10px;
+    margin-bottom: 30px;
+  }
+  .events {
+    width: 33%;
+    padding: 30px;
+    border-right: 1px solid rgba(0, 0, 0, 0.3);
+    #events-content {
+      max-height: 180px;
+      overflow: auto;
+      // display: flex;
+      // flex-direction: column-reverse;
+      p {
+        margin: 0 0 5px 0;
+        font-size: 14px;
+      }
+      span {
+        background-color: $c-pink;
+        padding: 5px 6px 4px 6px;
+        display: inline-block;
+        font-size: 11px;
+        text-transform: uppercase;
+      }
+    }
+  }
+  .demo {
+    width: 33%;
+    padding: 30px;
+    .demo-content {
+      display: flex;
+      flex-wrap: wrap;
+      max-height: 180px;
+      overflow: auto;
+    }
+    .dot {
+      background-color: #ff9800;
+      border-radius: 5px;
+      width: calc(20% - 10px);
+      padding-bottom: calc(20% - 10px);
+      position: relative;
+      margin: 5px;
+      box-shadow: inset 0 0 0 2px rgb(255 255 255 / 30%);
+      span {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+      &.selected {
+        background-color: #03a9f4;
+      }
+    }
+  }
+  .methods {
+    width: 33%;
+    padding: 30px;
+    border-left: 1px solid rgba(0, 0, 0, 0.3);
+    button {
+      width: 100%;
+      margin-bottom: 5px;
+      border: 2px solid rgba(0, 0, 0, 0.2);
+      background: transparent;
+      height: 40px;
+      border-radius: 4px;
+      padding: 0 10px;
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      cursor: pointer;
+      font-size: 14px;
+      color: #93bcff;
+      transition: 0.2s background;
+      &:hover{
+        background: rgba(0, 0, 0, 0.2)
+      }
+    }
+  }
+}

@@ -1,6 +1,5 @@
 import HomeHead from '../components/HomeHead';
 import Animatron from '../components/Animatron';
-// import Demo from '../components/Demo';
 import Minititle from '../components/Minititle';
 import About from '../components/About';
 import HowTo from '../components/HowTo';
