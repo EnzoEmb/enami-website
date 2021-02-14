@@ -1,0 +1,17 @@
+#demo-offset{
+  position: relative;
+  .demo-content{
+    position: relative;
+  }
+  &:before{
+    content: '';
+    width: 100%;
+    height: 3px;
+    background: orange;
+    bottom: 50%;
+    left: 0;
+    right: 0;
+    position: absolute;
+    z-index: 100;
+  }
+}

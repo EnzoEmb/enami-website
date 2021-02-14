@@ -1,9 +1,16 @@
 import HomeHead from '../components/HomeHead';
 import Animatron from '../components/Animatron';
-import Demo from '../components/Demo';
+// import Demo from '../components/Demo';
 import Minititle from '../components/Minititle';
 import About from '../components/About';
 import HowTo from '../components/HowTo';
+
+// Demos
+import Base from '../components/demo/Base';
+import Once from '../components/demo/Once';
+import Offset from '../components/demo/Offset';
+import Delay from '../components/demo/Delay';
+import Stagger from '../components/demo/Stagger';
 
 export default function Home() {
 
@@ -34,8 +41,20 @@ export default function Home() {
         <Minititle>DEMOS</Minititle>
       </div>
 
-      {/* <Demo title="Demo component title" summary={["Add the ", <span className="badge" key={0}>data-enami="animation-name"</span>, " attribute on an elements, and all selector inside that match the selector will be animated when the parent is visible."]} />
 
+
+    <Base />
+    <Once />
+    <Offset />
+    <Delay />
+    <Stagger />
+
+
+
+
+      {/* 
+     <Demo title="Demo component title" summary={["Add the ", <span className="badge" key={0}>data-enami="animation-name"</span>, " attribute on an elements, and all selector inside that match the selector will be animated when the parent is visible."]} />
+ 
 
       <Demo title="Parent" summary={["Add the ", <span className="badge" key={0}>data-enami="animation-name"</span>, " attribute on an elements, and all selector inside that match the selector will be animated when the parent is visible."]} />
 
