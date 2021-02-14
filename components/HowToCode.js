@@ -1,4 +1,12 @@
+
+import Clipboard from 'react-clipboard.js';
+import toast from 'react-hot-toast';
+
+
+
 export default function HowToCode(props) {
+  const notify = () => toast.success('Copied to clipboard!')
+
   return (
     <p>
       <span>
@@ -8,7 +16,11 @@ export default function HowToCode(props) {
       <code>
         {props.children}
       </code>
-      <button title="Copy to clipboard"><img src={"img/clipboard.svg"} alt="Copy to clipboard"/></button>
+
+      <Clipboard data-clipboard-text={props.copy} onSuccess={notify}>
+        📋 Copy to clipboard
+      </Clipboard>
+
     </p>
   )
 }

@@ -38,21 +38,33 @@
   .number {
     color: $c-pink;
     font-weight: bold;
+    margin-right: 5px;
+    display: inline-block;
   }
   button {
-    background: rgba(0, 0, 0, 0.2);
-    border: 0;
+    // background: rgba(0, 0, 0, 0.2);
+    border: 2px solid rgba(0, 0, 0, 0.2);
+    background: transparent;
+    // border: 0;
     height: 38px;
-    width: 38px;
+    // width: 38px;
     border-radius: 4px;
     margin-left: 5px;
+    padding: 0 10px;
     vertical-align: bottom;
     display: inline-flex;
     align-items: center;
     justify-content: center;
     cursor: pointer;
+    font-size: 14px;
+    color: #93bcff;
+    font-size: 14px;
+    transition: .2s background;
     img {
       width: 16px;
+    }
+    &:hover {
+      background: rgba(0, 0, 0, 0.2);
     }
   }
 }

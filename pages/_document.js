@@ -10,12 +10,12 @@ class MyDocument extends Document {
     return (
       <Html>
         <Head>
-          <link
+          {/* <link
             rel="preload"
             href="/fonts/font.woff2"
             as="font"
             crossOrigin=""
-          />
+          /> */}
           <link href="https://fonts.googleapis.com/css2?family=Space+Mono&display=swap" rel="stylesheet" />
         </Head>
         <body>

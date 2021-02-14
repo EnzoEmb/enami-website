@@ -4,6 +4,10 @@ import Animatron from '../components/Animatron';
 import Minititle from '../components/Minititle';
 import About from '../components/About';
 import HowTo from '../components/HowTo';
+import Head from 'next/head'
+
+import { Toaster } from 'react-hot-toast';
+
 
 // Demos
 import Base from '../components/demo/Base';
@@ -18,6 +22,13 @@ export default function Home() {
 
   return (
     <main id="main-wrapper">
+
+      <Toaster position="bottom-center" />
+
+      <Head>
+        <title>enami.js — a simple animation-on-scroll library</title>
+      </Head>
+
 
       <HomeHead />
 
@@ -43,11 +54,11 @@ export default function Home() {
 
 
 
-    <Base />
-    <Once />
-    <Offset />
-    <Delay />
-    <Stagger />
+      <Base />
+      <Once />
+      <Offset />
+      <Delay />
+      <Stagger />
 
 
 
