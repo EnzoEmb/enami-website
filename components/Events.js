@@ -136,7 +136,7 @@ export default function Events() {
             <button onClick={methodInit}>Init</button>
             <button onClick={methodDestroy}>Destroy</button>
             {/* <button onClick={methodDestroyItem}>Destroy item 18</button> */}
-            <button onClick={methodReset}>Reset (Item 18)</button>
+            {/* <button onClick={methodReset}>Reset (Item 18)</button> */}
             {/* <button onClick={methodUpdate}>Update</button> */}
           </div>
         </div>

@@ -9,7 +9,7 @@ export default function Demo(props) {
       <div className="container">
         <aside>
           <h2 className="demo-title">Once: false</h2>
-          <p>Add the <span className="badge" key={0}>data-enami="animation-name"</span> attribute on an elements, and all selector inside that match the selector will be animated when the parent is visible."</p>
+          <p>Add the setting <span className="badge">once: false</span> to trigger the animation every time its on viewport</p>
         </aside>
         <DemoContent />
       </div>

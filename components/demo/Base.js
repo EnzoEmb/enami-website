@@ -1,6 +1,8 @@
 import { useEffect, useState } from 'react';
 import enami from 'enami';
-
+import SyntaxHighlighter from 'react-syntax-highlighter';
+import { monokai } from 'react-syntax-highlighter/dist/cjs/styles/hljs';
+import Minititle from '../Minititle';
 
 export default function Demo(props) {
   return (
@@ -9,7 +11,7 @@ export default function Demo(props) {
       <div className="container">
         <aside>
           <h2 className="demo-title">Base Setup</h2>
-          <p>Add the <span className="badge" key={0}>data-enami="animation-name"</span> attribute on an elements, and all selector inside that match the selector will be animated when the parent is visible."</p>
+          <p>Adding <span className="badge">data-enami="fade-up"</span> attribute on an elements</p>
         </aside>
         <DemoContent />
       </div>
@@ -17,6 +19,42 @@ export default function Demo(props) {
   )
 }
 
+
+function CodeContent() {
+
+
+
+  const jsCode = `new enami({
+  selector: '#demo',
+});
+    `;
+
+
+
+  const htmlCode = `<section id="demo">
+  <div class="demo-dot" data-enami="scale-in">1</div>
+  <div class="demo-dot" data-enami="scale-in">2</div>
+  <div class="demo-dot" data-enami="scale-in">3</div>
+  <div class="demo-dot" data-enami="scale-in">4</div>
+  <div class="demo-dot" data-enami="scale-in">5</div>
+</section>
+  `;
+
+  return (
+    <div className="demo-content">
+      <Minititle>JS</Minititle>
+      <SyntaxHighlighter language="javascript" style={monokai}>
+        {jsCode}
+      </SyntaxHighlighter>
+
+      <Minititle>HTML</Minititle>
+      <SyntaxHighlighter language="xml" style={monokai}>
+        {htmlCode}
+      </SyntaxHighlighter>
+
+    </div>)
+
+}
 
 function DemoContent() {
 
@@ -44,7 +82,7 @@ function DemoContent() {
         )}
       </div>
 
-        : <div class="demo-content">Hola que tal</div>}
+        : <CodeContent />}
 
       <div className="demo-buttons">
         <button onClick={() => setTab('demo')} className={tab == 'demo' ? 'active' : ''}>Demo</button>

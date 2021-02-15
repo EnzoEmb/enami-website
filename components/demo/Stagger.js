@@ -1,6 +1,6 @@
 import { useEffect, useState } from 'react';
-// import enami from 'enami';
-import enami from '../../../enami/src/index.js';
+import enami from 'enami';
+// import enami from '../../../enami/src/index.js';
 
 
 export default function Demo(props) {
@@ -10,7 +10,7 @@ export default function Demo(props) {
       <div className="container">
         <aside>
           <h2 className="demo-title">Staggering</h2>
-          <p>Add the <span className="badge" key={0}>data-enami="animation-name"</span> attribute on an elements, and all selector inside that match the selector will be animated when the parent is visible."</p>
+          <p>Use the <span className="badge">data-enami-stagger=".05s"</span> along with the <span className="badge">data-enami-children=".my-children-selector"</span> and <span className="badge">data-enami-animation="fade-up"</span> to make a staggering effect on the children elements</p>
         </aside>
         <DemoContent />
       </div>

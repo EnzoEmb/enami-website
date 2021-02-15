@@ -1,8 +1,8 @@
 import { useEffect } from 'react';
 import charming from 'charming';
 import { useMediaQuery } from 'react-responsive'
-// import enami from 'enami';
-import enami from '../../enami/src/index.js';
+import enami from 'enami';
+// import enami from '../../enami/src/index.js';
 
 export default function HomeHead() {
   useEffect(() => {
