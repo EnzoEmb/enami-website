@@ -9,7 +9,7 @@
   },
   "dependencies": {
     "charming": "^3.0.2",
-    "enami": "^0.8.0",
+    "enami": "^0.8.2",
     "next": "^10.0.6",
     "normalize.css": "^8.0.1",
     "react": "^17.0.1",

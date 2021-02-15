@@ -71,10 +71,10 @@ export default function Events() {
     myEnami.destroy();
   }
   function methodDestroyFirst() {
-    myEnami.destroy(null, 'initial');
+    myEnami.destroy('initial');
   }
   function methodDestroyLast() {
-    myEnami.destroy(null, 'final');
+    myEnami.destroy('final');
   }
   // function methodDestroyItem() {
   //   myEnami.destroy('#e18');
