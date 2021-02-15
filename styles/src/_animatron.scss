@@ -94,4 +94,23 @@
     width: 35%;
     overflow: auto;
   }
+
+  @media(max-width: 600px){
+    .animation-demo{
+      height: auto;
+      flex-direction: column;
+    }
+    .animations-zone{
+      min-height: 250px;
+    }
+    .animations-list{
+      width: 100%;
+      display: flex;
+      white-space: nowrap;
+    }
+    button{
+      padding: 0 15px;
+      margin-right: 10px;
+    }
+  }
 }

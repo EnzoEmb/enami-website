@@ -82,8 +82,23 @@
       font-size: 14px;
       color: #93bcff;
       transition: 0.2s background;
-      &:hover{
-        background: rgba(0, 0, 0, 0.2)
+      &:hover {
+        background: rgba(0, 0, 0, 0.2);
+      }
+    }
+  }
+  @media (max-width: 800px) {
+    .EventsContainer {
+      flex-direction: column;
+    }
+    .events,
+    .demo,
+    .methods {
+      width: 100%;
+    }
+    .demo {
+      .demo-content {
+        max-height: 130px;
       }
     }
   }
