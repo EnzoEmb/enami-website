@@ -2,6 +2,9 @@ import { useEffect, useState } from 'react';
 import enami from 'enami';
 // import enami from '../../../enami/src/index.js';
 
+import SyntaxHighlighter from 'react-syntax-highlighter';
+import { monokai } from 'react-syntax-highlighter/dist/cjs/styles/hljs';
+import Minititle from '../Minititle';
 
 export default function Demo(props) {
   return (
@@ -17,6 +20,45 @@ export default function Demo(props) {
     </article>
   )
 }
+
+
+
+function CodeContent() {
+
+
+
+  const jsCode = `new enami({
+  selector: '#demo',
+});
+    `;
+
+
+
+  const htmlCode = `<section id="demo">
+  <div class="demo-dot" data-enami="scale-in" data-enami-delay="1s">1</div>
+  <div class="demo-dot" data-enami="scale-in" data-enami-delay="2s">2</div>
+  <div class="demo-dot" data-enami="scale-in" data-enami-delay="3s">3</div>
+  <div class="demo-dot" data-enami="scale-in" data-enami-delay="4s">4</div>
+  <div class="demo-dot" data-enami="scale-in" data-enami-delay="5s">5</div>
+</section>
+  `;
+
+  return (
+    <div className="demo-content">
+      <Minititle>JS</Minititle>
+      <SyntaxHighlighter language="javascript" style={monokai}>
+        {jsCode}
+      </SyntaxHighlighter>
+
+      <Minititle>HTML</Minititle>
+      <SyntaxHighlighter language="xml" style={monokai}>
+        {htmlCode}
+      </SyntaxHighlighter>
+
+    </div>)
+
+}
+
 
 
 function DemoContent() {
@@ -74,7 +116,7 @@ function DemoContent() {
 
       </div>
 
-        : <div className="demo-content">Hola que tal</div>}
+        : <CodeContent/>}
 
       <div className="demo-buttons">
         <button onClick={() => setTab('demo')} className={tab == 'demo' ? 'active' : ''}>Demo</button>

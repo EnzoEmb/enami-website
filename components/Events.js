@@ -1,6 +1,6 @@
 import Minititle from '../components/Minititle';
-import enami from '../../enami/src/index.js';
-// import enami from 'enami';
+// import enami from '../../enami/src/index.js';
+import enami from 'enami';
 import { useEffect } from 'react';
 
 
