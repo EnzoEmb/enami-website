@@ -13,7 +13,7 @@ export default function Demo(props) {
       <div className="container">
         <aside>
           <h2 className="demo-title">Staggering</h2>
-          <p>Use the <span className="badge">data-enami-stagger=".05s"</span> along with the <span className="badge">data-enami-children=".my-children-selector"</span> and <span className="badge">data-enami-animation="fade-up"</span> to make a staggering effect on the children elements</p>
+          <p>Use the <span className="badge">data-enami-stagger</span> along with the <span className="badge">data-enami-children</span> and <span className="badge">data-enami-animation</span> attributes to make a staggering effect on the children elements</p>
         </aside>
         <DemoContent />
       </div>

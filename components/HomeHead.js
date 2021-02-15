@@ -35,7 +35,7 @@ export default function HomeHead() {
         <h2 data-charming="" data-enami-children="span" data-enami-stagger=".02s" data-enami-reset data-enami-delay=".8s">a simple animation-<br />on-scroll library</h2>
         <div className="badge">5kb minified!</div>
         <div className="buttons">
-          <a href="https://github.com/EnzoEmb/enami/archive/0.4.0-alpha.zip" className="btn-green">Download</a>
+          <a href="https://github.com/EnzoEmb/enami/archive/0.8.0.zip" className="btn-green">Download</a>
           <a href="https://github.com/EnzoEmb/enami" className="btn-green--border">Check on Github</a>
         </div>
       </header>

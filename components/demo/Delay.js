@@ -13,7 +13,7 @@ export default function Demo(props) {
       <div className="container">
         <aside>
           <h2 className="demo-title">Delay</h2>
-          <p>Add the <span className="badge">data-enami-delay="1s"</span> attribute to change the animation delay</p>
+          <p>Add the <span className="badge">data-enami-delay</span> attribute to change the animation delay</p>
         </aside>
         <DemoContent />
       </div>

@@ -13,7 +13,7 @@ export default function Demo(props) {
       <div className="container">
         <aside>
           <h2 className="demo-title">Offset</h2>
-          <p>Use the <span className="badge">offset</span> to move the position of triggering</p>
+          <p>Use the <span className="badge">offset</span> setting to move the position of triggering</p>
         </aside>
         <DemoContent />
       </div>
