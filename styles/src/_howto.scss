@@ -13,28 +13,27 @@
     letter-spacing: -0.03em;
     font-size: 13px;
     vertical-align: -0.8em;
-    margin-left: 5px;
+    margin-left: 13px;
     line-height: 1.4em;
   }
-  span {
-    user-select: none;
-    &.red {
-      color: #dc534a;
-    }
-    &.green {
-      color: #86cf73;
-    }
-    &.yellow {
-      border-bottom: 1px solid #f3c56f;
-      color: #f3c56f;
-    }
-    &.grey {
-      color: #b5bfcf;
-    }
-    &.cyan {
-      color: #5bcaf9;
+  pre {
+    padding: 0 !important;
+    margin: 0 !important;
+    background: transparent !important;
+    font-size: 0;
+    > code {
+      white-space: pre !important;
+      margin: 0 !important;
+      padding: 0 !important;
+      background: transparent !important;
+      overflow: hidden !important;
     }
   }
+
+  p > span {
+    display: block;
+  }
+
   .number {
     color: $c-pink;
     font-weight: bold;
@@ -59,7 +58,7 @@
     font-size: 14px;
     color: #93bcff;
     font-size: 14px;
-    transition: .2s background;
+    transition: 0.2s background;
     img {
       width: 16px;
     }
@@ -67,13 +66,15 @@
       background: rgba(0, 0, 0, 0.2);
     }
   }
-  @media(max-width: 700px){
-    code{
+  @media (max-width: 700px) {
+    code {
       width: 100%;
+      margin: 5px 0 0 0;
     }
-    button{
+    button {
       width: 100%;
       margin-top: 5px;
+      margin-left: 0;
     }
   }
 }

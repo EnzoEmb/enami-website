@@ -1,21 +1,42 @@
 import Minititle from './Minititle';
 import HowToCode from './HowToCode';
+import SyntaxHighlighter from 'react-syntax-highlighter';
+import { monokai } from 'react-syntax-highlighter/dist/cjs/styles/hljs';
 
 export default function HowTo() {
+
+  const scriptCode = `<script src="https://unpkg.com/enami@0.8.0/dist/enami.min.js"></script>`;
+  const cssCode = `<link rel="stylesheet" href="https://unpkg.com/enami@0.8.0/dist/enami.min.css">`;
+  const htmlCode = `<h2 data-enami="fade-up"></h2>`;
+  const initCode = `<script>new enami();</script>`;
 
   return (
     <section id="howto" >
       <div className="container">
         <Minititle>HOW TO USE</Minititle>
         <div>
-          <HowToCode number="1" title="Add enami.js script" copy='<script src="https://unpkg.com/enami@0.5.0/dist/enami.min.js"></script>'>
-            &lt;<span className="red">script</span> <span className="green">src</span>=&quot;<span className="yellow">https://unpkg.com/enami@0.5.0/dist/enami.min.js</span>&quot;&gt;&lt;/<span className="red">script</span>&gt;
+          <HowToCode number="1" title="Add enami.js script" copy={scriptCode}>
+            <SyntaxHighlighter language="html" style={monokai}>
+              {scriptCode}
+            </SyntaxHighlighter>
           </HowToCode>
-          <HowToCode number="2" title="Add data-enami attribute to your elements" copy='<h2 data-enami="fade-up"></h2>'>
-            &lt;<span className="red">h2</span> <span className="green">data-enami</span>=&quot;<span className="yellow">fade-up</span>&quot;&gt;&lt;/<span className="red">h2</span>&gt;
+
+          <HowToCode number="2" title="Add enami.css style" copy={cssCode}>
+            <SyntaxHighlighter language="html" style={monokai}>
+              {cssCode}
+            </SyntaxHighlighter>
           </HowToCode>
-          <HowToCode number="3" title="Initialize the script" copy="<script>new enami();</script>">
-            &lt;<span className="red">script</span>&gt; <span className="grey">new</span> <span className="cyan">enami()</span>;  &lt;/<span className="red">script</span>&gt;
+
+          <HowToCode number="3" title="Add data-enami attribute to your elements" copy={htmlCode}>
+            <SyntaxHighlighter language="html" style={monokai}>
+              {htmlCode}
+            </SyntaxHighlighter>
+          </HowToCode>
+
+          <HowToCode number="4" title="Initialize the script" copy={initCode}>
+            <SyntaxHighlighter language="html" style={monokai}>
+              {initCode}
+            </SyntaxHighlighter>
           </HowToCode>
 
 
