@@ -40,8 +40,11 @@ export default function Events() {
       events.scrollTop = events.scrollHeight;
     });
     document.addEventListener('enami:init', function (e) {
-      events.innerHTML += '<p><span>Document: </span> Init triggered</p>'
-      events.scrollTop = events.scrollHeight;
+      if (e.detail?.target == '#demo-events') {
+
+        events.innerHTML += '<p><span>Document: </span> Init triggered</p>'
+        events.scrollTop = events.scrollHeight;
+      }
     });
     document.addEventListener('enami:destroy', function (e) {
       // console.log(e);
