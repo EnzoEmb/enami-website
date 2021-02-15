@@ -1,5 +1,6 @@
 import Minititle from '../components/Minititle';
-import enami from 'enami';
+import enami from '../../enami/src/index.js';
+// import enami from 'enami';
 import { useEffect } from 'react';
 
 
@@ -43,6 +44,7 @@ export default function Events() {
       events.scrollTop = events.scrollHeight;
     });
     document.addEventListener('enami:destroy', function (e) {
+      // console.log(e);
       events.innerHTML += '<p><span>Document: </span> Destroy triggered</p>'
       events.scrollTop = events.scrollHeight;
     });

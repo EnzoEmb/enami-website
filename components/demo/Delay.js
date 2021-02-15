@@ -74,7 +74,7 @@ function DemoContent() {
 
       </div>
 
-        : <div class="demo-content">Hola que tal</div>}
+        : <div className="demo-content">Hola que tal</div>}
 
       <div className="demo-buttons">
         <button onClick={() => setTab('demo')} className={tab == 'demo' ? 'active' : ''}>Demo</button>
