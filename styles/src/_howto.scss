@@ -30,8 +30,11 @@
     }
   }
 
-  p > span {
+  .HowToCode > span {
     display: block;
+  }
+  .HowToCode{
+    margin-bottom: 10px;
   }
 
   .number {

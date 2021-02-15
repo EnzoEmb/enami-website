@@ -16,27 +16,27 @@ export default function HowTo() {
         <Minititle>HOW TO USE</Minititle>
         <div>
           <HowToCode number="1" title="Add enami.js script" copy={scriptCode}>
-            <SyntaxHighlighter language="html" style={monokai}>
+            <div><SyntaxHighlighter language="html" style={monokai}>
               {scriptCode}
-            </SyntaxHighlighter>
+            </SyntaxHighlighter></div>
           </HowToCode>
 
           <HowToCode number="2" title="Add enami.css style" copy={cssCode}>
-            <SyntaxHighlighter language="html" style={monokai}>
+            <div><SyntaxHighlighter language="html" style={monokai}>
               {cssCode}
-            </SyntaxHighlighter>
+            </SyntaxHighlighter></div>
           </HowToCode>
 
           <HowToCode number="3" title="Add data-enami attribute to your elements" copy={htmlCode}>
-            <SyntaxHighlighter language="html" style={monokai}>
+            <div><SyntaxHighlighter language="html" style={monokai}>
               {htmlCode}
-            </SyntaxHighlighter>
+            </SyntaxHighlighter></div>
           </HowToCode>
 
           <HowToCode number="4" title="Initialize the script" copy={initCode}>
-            <SyntaxHighlighter language="html" style={monokai}>
+            <div><SyntaxHighlighter language="html" style={monokai}>
               {initCode}
-            </SyntaxHighlighter>
+            </SyntaxHighlighter></div>
           </HowToCode>
 
 

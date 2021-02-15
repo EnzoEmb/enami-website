@@ -8,7 +8,7 @@ export default function HowToCode(props) {
   const notify = () => toast.success('Copied to clipboard!')
 
   return (
-    <p>
+    <div className="HowToCode">
       <span>
         <span className="number">{props.number}.</span>
         {props.title}
@@ -21,6 +21,6 @@ export default function HowToCode(props) {
         📋 Copy to clipboard
       </Clipboard>
 
-    </p>
+    </div>
   )
 }

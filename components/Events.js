@@ -31,15 +31,16 @@ export default function Events() {
       events.innerHTML += '<p><span>Item 18: </span> Out of viewport</p>'
       events.scrollTop = events.scrollHeight;
     });
-    document.addEventListener('enami:reset', function (e) {
-      events.innerHTML += '<p><span>Document: </span> Reset triggered</p>'
-      events.scrollTop = events.scrollHeight;
-    });
-    document.addEventListener('enami:update', function (e) {
-      events.innerHTML += '<p><span>Document: </span> Update triggered</p>'
-      events.scrollTop = events.scrollHeight;
-    });
+    // document.addEventListener('enami:reset', function (e) {
+    //   events.innerHTML += '<p><span>Document: </span> Reset triggered</p>'
+    //   events.scrollTop = events.scrollHeight;
+    // });
+    // document.addEventListener('enami:update', function (e) {
+    //   events.innerHTML += '<p><span>Document: </span> Update triggered</p>'
+    //   events.scrollTop = events.scrollHeight;
+    // });
     document.addEventListener('enami:init', function (e) {
+      // console.log(e.detail);
       if (e.detail?.target == '#demo-events') {
 
         events.innerHTML += '<p><span>Document: </span> Init triggered</p>'
@@ -47,7 +48,7 @@ export default function Events() {
       }
     });
     document.addEventListener('enami:destroy', function (e) {
-      // console.log(e);
+      // console.log(e.detail);
       events.innerHTML += '<p><span>Document: </span> Destroy triggered</p>'
       events.scrollTop = events.scrollHeight;
     });
