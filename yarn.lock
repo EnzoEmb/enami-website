@@ -838,10 +838,10 @@
   "resolved" "https://registry.npmjs.org/emojis-list/-/emojis-list-2.1.0.tgz"
   "version" "2.1.0"
 
-"enami@^0.7.0":
-  "integrity" "sha512-fdvn4lxWvsQujLt9ScTm/VB+Fm1USV8v8x6vkUmAj4bURr3tmqjz3Nejt6uRh0qwe1A7fQ3UtdQTDAi+TxOEVA=="
-  "resolved" "https://registry.npmjs.org/enami/-/enami-0.7.0.tgz"
-  "version" "0.7.0"
+"enami@^0.7.1":
+  "integrity" "sha512-5iuz1KJj2kJB1rsQd89JMe7WQR1lsI+QDWbc5Ijd0EQgzQJtpYBe6GVOsRrBc7biDMKwkv7fTjCdNwhVPv9Pjg=="
+  "resolved" "https://registry.npmjs.org/enami/-/enami-0.7.1.tgz"
+  "version" "0.7.1"
 
 "end-of-stream@^1.1.0", "end-of-stream@^1.4.1":
   "integrity" "sha512-+uw1inIHVPQoaVuHzRyXd21icM+cnt4CzD5rW+NC1wjOUSTOs+Te7FOv7AhN7vS9x/oIyhLP5PR1H+phQAHu5Q=="
