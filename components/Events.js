@@ -48,7 +48,7 @@ export default function Events() {
       events.innerHTML += '<p><span>Document: </span> Destroy triggered</p>'
       events.scrollTop = events.scrollHeight;
     });
-    
+
 
 
   })
@@ -66,6 +66,12 @@ export default function Events() {
 
   function methodDestroy() {
     myEnami.destroy();
+  }
+  function methodDestroyFirst() {
+    myEnami.destroy(null, 'initial');
+  }
+  function methodDestroyLast() {
+    myEnami.destroy(null, 'final');
   }
   // function methodDestroyItem() {
   //   myEnami.destroy('#e18');
@@ -137,6 +143,8 @@ export default function Events() {
           <div className="methods-content">
             <button onClick={methodInit}>Init</button>
             <button onClick={methodDestroy}>Destroy</button>
+            <button onClick={methodDestroyFirst}>Destroy (initial state)</button>
+            <button onClick={methodDestroyLast}>Destroy (final state)</button>
             {/* <button onClick={methodDestroyItem}>Destroy item 18</button> */}
             {/* <button onClick={methodReset}>Reset (Item 18)</button> */}
             {/* <button onClick={methodUpdate}>Update</button> */}
